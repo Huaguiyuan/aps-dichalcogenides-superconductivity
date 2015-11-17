@@ -1,6 +1,6 @@
 # Build Environment
-LATEX_INPUT = makenew-latex-project
-LATEX_OUTPUT = "Make-New-LaTeX-Project"
+LATEX_INPUT = aps-dichalcogenides-superconductivity
+LATEX_OUTPUT = "aps-dichalcogenides-superconductivity"
 LATEX_OUTPUT_EXT = pdf
 LATEX_SRC = tex
 LATEX_BULD = build

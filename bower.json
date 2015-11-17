@@ -1,8 +1,8 @@
 {
-  "name": "makenew-latex-project",
+  "name": "aps-dichalcogenides-superconductivity",
   "version": "0.0.0",
-  "description": "LaTeX project skeleton.",
-  "main": "tex/makenew-latex-project.tex",
+  "description": "Superconductivity in Transition Metal Dichalcogenides.",
+  "main": "tex/aps-dichalcogenides-superconductivity.tex",
   "authors": [
     "Evan Sosenko <razorx@evansosenko.com>"
   ],
@@ -10,7 +10,7 @@
     "latex"
   ],
   "license": "Copyright 2015 Evan Sosenko",
-  "homepage": "https://github.com/makenew/latex-project",
+  "homepage": "https://github.com/razor-x/aps-dichalcogenides-superconductivity",
   "private": true,
   "ignore": [
     "**/.*",
