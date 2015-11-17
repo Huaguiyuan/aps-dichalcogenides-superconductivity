@@ -1,4 +1,34 @@
-\documentclass{article}
+\documentclass[amsmath,amssymb,prl,reprint]{revtex4-1} % chktex 8
+
+\input{_header.xelatex}
+\input{_header}
+
 \begin{document}
-  \LaTeX{}
+  \author{Evan Sosenko}
+  \email{evan.sosenko@email.ucr.edu}
+  \homepage{https://evansosenko.com/}
+
+  \author{Junhua Zhang}
+  \email{junhua.zhang@ucr.edu}
+
+  \author{Vivek Aji}
+  \email{vivek.aji@ucr.edu}
+
+  \affiliation{%
+    Department of Physics, University of California,
+    Riverside, Riverside, California 92521, USA}
+
+  \title{Superconductivity in Transition Metal Dichalcogenides}
+  \date{\today}
+
+  \input{_abstract}
+  \maketitle
+  \input{_introduction}
+  \input{_model}
+  \input{_superconductor}
+  \input{_optical}
+  \input{_topology}
+  \input{_magnetic}
+
+  \bibliography{components/references/dichalcogenides}
 \end{document}

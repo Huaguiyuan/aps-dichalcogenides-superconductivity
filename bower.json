@@ -17,5 +17,8 @@
     "node_modules",
     "tex/components",
     "build"
-  ]
+  ],
+  "dependencies": {
+    "references": "https://github.com/razor-x/references.git"
+  }
 }

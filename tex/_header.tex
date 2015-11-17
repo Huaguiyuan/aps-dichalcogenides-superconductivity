@@ -1,0 +1,88 @@
+% Core packages.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+% For derivatives and other math commands.
+\usepackage{cool}
+
+% Use serial comma with cleveref.
+\newcommand{\creflastconjunction}{, and\nobreakspace}
+
+% Chemical formulas.
+\usepackage[version=3]{mhchem}
+
+% For Bra-Ket.
+\usepackage{braket}
+
+% Define \abs and \norm.
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+
+% Swap the definition of \abs* and \norm*, so that \abs and \norm
+% resizes the size of the brackets and the starred version does not.
+\makeatletter
+\let\oldabs\abs{}
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+%
+\let\oldnorm\norm{}
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+
+% Define xoverline.
+% From: https://tex.stackexchange.com/a/22101
+\makeatletter
+\newsavebox\myboxA%
+\newsavebox\myboxB%
+\newlength\mylenA%
+\newcommand*\xoverline[2][0.75]{%
+  \sbox{\myboxA}{$\m@th#2$}%
+  \setbox\myboxB\null% phantom box
+  \ht\myboxB=\ht\myboxA%
+  \dp\myboxB=\dp\myboxA%
+  \wd\myboxB=#1\wd\myboxA% scale phantom
+  \sbox\myboxB{$\m@th\overline{\copy\myboxB}$}%  overlined phantom
+  \setlength\mylenA{\the\wd\myboxA}% calculate width difference
+  \addtolength\mylenA{-\the\wd\myboxB}%
+  \ifdim\wd\myboxB<\wd\myboxA%
+    \rlap{\hskip 0.5\mylenA\usebox\myboxB}{\usebox\myboxA}%
+  \else
+    \hskip -0.5\mylenA\rlap{\usebox\myboxA}{\hskip 0.5\mylenA\usebox\myboxB}%
+  \fi}
+\makeatother
+
+% Define the real part function.
+\newcommand{\re}{\operatorname{Re}}
+
+% Complex conjugate.
+\newcommand*\cc[1]{\xoverline{#1}}
+
+% Text.
+\newcommand{\hc}{\text{h.c.}}
+
+% Shorthand for vector style.
+\newcommand{\vc}{\vect}
+
+% Vectors.
+\newcommand{\vR}{\vc{R}}
+\newcommand{\vK}{\vect{k}}
+
+% Normal ordering.
+\newcommand\normalorder[1]{{:}\mkern1mu#1\mkern1.6mu{:}}
+
+% Function arguments.
+\newcommand{\of}[1]{\left(#1\right)}
+\newcommand{\ofK}{\of{\vK}}
+\newcommand{\ofMK}{\of{-\vK}}
+\newcommand{\ev}[1]{\left\langle#1\right\rangle}
+
+% Functions.
+\newcommand{\fnEnergy}[1]{E_{τ σ}^{#1}}
+\newcommand{\fnTheta}[1]{θ_{τ σ}^{#1} \of{k}}
+
+% Partials
+\newcommand{\sumK}{\sideset{}{'}∑_{\vK}}
+\newcommand{\sumKK}{\sideset{}{'}∑_{\vK, \vK'}}
