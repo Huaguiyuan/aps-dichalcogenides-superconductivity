@@ -1,6 +1,13 @@
 \documentclass[amsmath,amssymb,prl,reprint]{revtex4-1} % chktex 8
 
-\input{_header.xelatex}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \input{_header.pdflatex}
+\else\ifXeTeX
+  \input{_header.xelatex}
+\fi\fi
+
 \input{_header}
 
 \begin{document}

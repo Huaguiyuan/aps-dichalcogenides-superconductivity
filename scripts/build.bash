@@ -36,7 +36,6 @@ function build () {
   cd ${tmpdir}/${src}
 
   echo Creating expanded tex file
-  sed -i -e 's/_header\.xelatex/_header\.pdflatex/g' ${input}.tex
   latexpand --keep-comments -o ${input}.expanded.tex ${input}.tex
   cp -p ${input}.expanded.tex ${srcdir}/${out_path}/${input}.tex
 
