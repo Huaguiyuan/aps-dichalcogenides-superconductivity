@@ -24,7 +24,7 @@ tex:
 		cp -p $(LATEX_INPUT).$(LATEX_OUTPUT_EXT) \
 		../$(LATEX_BULD)/$(LATEX_OUTPUT).$(LATEX_OUTPUT_EXT)
 
-build: clean
+build: clean tex
 	@echo Builing archive for submission to APS.
 	@echo
 	@./scripts/build.bash \
