@@ -6,7 +6,7 @@ layering a TMDC on a suitable $s$-wave superconductor.
 Second, we consider an intrinsic correlated phase arising
 from density-density interactions.
 
-In this section we introduce the notation for the
+In this section, we introduce the notation for the
 Fock space creation and annihilation operators,
 with $a^ν_{τ σ} \ofK$ corresponding to the tight-binding orbital states,
 and $c^n_{τ σ} \ofK$ to the resulting eigenstates of the full Hamiltonian.
@@ -34,7 +34,7 @@ we project this into the upper-valance bands and obtain the Hamiltonian,
     + Δ_{\vK} c_{\vK ↑}^† c_{-\vK ↓}^† \right)
     + ε,
 \end{multline}
-where $ξ_{\vK} = E_{+ ↑}^- \of{\abs{\vK}} - μ$, and
+where $ξ_{\vK} = E_{+ ↑}^- \of{\abs{\vK}} - μ$ and
 \begin{equation}
   Δ_{\vK}
   = \frac{1}{2} \left( Δ_{\text{c}} + Δ_{\text{v}} \right)
@@ -43,7 +43,7 @@ where $ξ_{\vK} = E_{+ ↑}^- \of{\abs{\vK}} - μ$, and
     \cos{θ_{\vK}},
 \end{equation}
 with $θ_{\vK} = θ_{+↑}^- \of{\abs{\vK}}$.
-This has identical form to the standard BCS Hamiltonian with
+This form is identical to the standard BCS Hamiltonian with
 an effective spin index $α$.
 The corresponding energies,
 $λ_{\vK} = ± \sqrt{ξ_{\vK}^2 + Δ_{\vK}^2}$,
@@ -56,13 +56,14 @@ follow immediately.
 Note that $Δ_{\vK}$ will be constant and independent of $\vK$
 for identical coupling constants $Δ_{\text{c}} = Δ_{\text{v}}$.
 Even when $Δ_{\text{c}}$ and $Δ_{\text{v}}$ are different,
+the constant term will dominant the other.
 
 We will return to this result after discussing the
 intrinsic case as we will show the dominant channel mimics this form.
 
 \subsubsection{Intrinsic Phase}
 
-For local attractive density-density interaction
+For a local attractive density-density interaction
 (e.g.\ one mediated by phonons), the potential is
 \begin{equation}
   V
@@ -73,7 +74,7 @@ For local attractive density-density interaction
 \end{equation}
 with $v_{\vR \vR'} = v_0 δ_{\vR \vR'}$
 and $n_{\vR}$ the total Wannier electron density at lattice vector $\vR$.
-Projecting to the states near the chemical potential gives,
+Projecting to the states near the chemical potential gives
 \begin{multline}
   P_{τ = σ}^{n = -} \left( H^V \right) =
     \sumKK v \of{\vK' - \vK}
@@ -98,7 +99,7 @@ The order parameter is
   Δ_0 = v_0 \sumK \cc{g}_{\vK} \ev{c_{-\vK α'} c_{\vK α}},
 \end{equation}
 where the form of $g_{\vK}$ depends on the particular pairing channel.
-The resulting Hamiltonian has the same form as the BCS Hamiltonian
+The resulting Hamiltonian has the same form as the BCS Hamiltonian in
 \cref{eq:sc:induced:projected}
 with an effective $Δ_{\vK} = g_{\vK} · Δ_0$.
 For intravalley channels, note that
@@ -124,8 +125,8 @@ This is to be expected as the density-density interaction
 leads to the largest pairing for electrons of opposite spins.
 Since the intravalley processes have the same spin,
 they are disfavored as compared to the intervalley pairing.
-This result also suggests that intravalley pairing requires
-odd parity couplings that may arise from spin exchange interactions.
+This result further suggests that intravalley pairing requires
+odd parity couplings which may arise from spin exchange interactions.
 Thus, the key features of the intrinsic superconducting state
 are identical to to induced system, and we restrict further
 analysis to that case.
