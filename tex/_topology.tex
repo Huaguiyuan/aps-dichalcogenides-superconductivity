@@ -2,10 +2,10 @@
 
 The Berry curvature of left and right circularly polarized
 ($\vc{ϵ_±}$) optical excitations for a given $\vK$
-is $± 2 Ω_{+ ↑}^+ \of{k}$ where
+is $± 2 Ω_{+ ↑}^+ \of{k}$, where
 \begin{subequations}
   \begin{align}
-    Ω_{τ σ}^n \of{k}
+    Ω_{τ σ}^n \of{k},
     & = \vc{\hat{z}} · \vc{Ω}_{τ σ}^n \ofK \\
     & = - n τ
       \left[ \frac{1}{2 k} \pderiv{}{k} \fnTheta{n} \right]
@@ -16,7 +16,13 @@ is $± 2 Ω_{+ ↑}^+ \of{k}$ where
   \end{align}
 \end{subequations}
 
-The BCS ground states is
+The BCS ground state %
+\footnote{%
+  Note that the full ground state
+  also contains the lower two filled bands,
+  but those contribute zero net Berry curvature and may be ignored
+  in this section and the next.}
+is
 \begin{subequations}
   \begin{align}
     \Ket{Ω}
@@ -24,21 +30,16 @@ The BCS ground states is
     & = ∏_{\vK} \left( \cos{β_{\vK}} - \sin{β_{\vK}}
         c_{\vK ↑}^† c_{-\vK ↓}^† \right) \Ket{0}.
   \end{align}
-\end{subequations} %
-\footnote{%
-  Note that the full ground state
-  also contains the lower two filled bands,
-  but those contribute zero net Berry curvature and may be ignored
-  in this section and the next.}
+\end{subequations}
 This BCS ground state may be viewed as built up
-from the quasiparticle eigenstates
-of the $\vK$ dependent Hamiltonian
-$- λ_{\vK} \left( b_{\vK ↑} b_{\vK ↑}^†
-+ b_{-\vK ↓} b_{-\vK ↓}^† \right)$,
+from the quasiparticle eigenstates,
 \begin{equation}
   \Ket{\vK}
-  = \csc{β_{\vK}} b_{\vK ↑} b_{-\vK ↓} \Ket{0}.
+  = \csc{β_{\vK}} b_{\vK ↑} b_{-\vK ↓} \Ket{0},
 \end{equation}
+of the $\vK$-dependent Hamiltonian
+$- λ_{\vK} \left( b_{\vK ↑} b_{\vK ↑}^†
++ b_{-\vK ↓} b_{-\vK ↓}^† \right)$,
 
 As expected, the $z$-component of the Berry curvature of this state
 is zero,
@@ -57,9 +58,9 @@ is zero,
 Note that a single optically excited state in the left valley
 for a given $\vK$ is
 ${c_{+ ↑}^+}^† \ofK c_{\vK ↑} \Ket{\vK}$
-which has corresponding Berry Curvature
+which has corresponding Berry curvature
 $2 \sin^6 {β_{\vK}} Ω_{+ ↑}^+ \of{k}$.
 Similarly, a single optically excited state in the right valley
-has corresponding curvature identically opposite to this.
+has corresponding Berry curvature identically opposite to this.
 Thus, combined with the valley selective optical transition rate,
 we expect the superconducting state will also exhibit the valley-hall effect.
