@@ -12,15 +12,14 @@ which acts as an effective angular momentum.
 The electromagnetic potential $\vc{A}$,
 with polarization vector $\vc{ϵ}$,
 is introduced using minimal coupling,
-\begin{equation}
-  H_{τ σ}^{ν ν'} \ofK
-  → H_{τ σ}^{ν ν'} \of{\vK + e \vc{A}},
-\end{equation}
+$H_{τ σ}^{ν ν'} \ofK
+→ H_{τ σ}^{ν ν'} \of{\vK + e \vc{A}}$,
 where, in the dipole approximation,
 $\vc{A} = 2 \re{\vc{ϵ} A_0 e^{- i ω t}}$.
 This yields a perturbed Hamiltonian
 $H → H + H^A$, where
 $H^A = H' e^{- i ω t} + H'^† e^{i ω t}$,
+with
 \begin{multline}
   H'
   = \sumK ∑_{τ, σ}
@@ -33,24 +32,22 @@ $H^A = H' e^{- i ω t} + H'^† e^{i ω t}$,
     a^v_{τ σ} \ofK,
 \end{multline}
 and
-\begin{equation}
-  H'_τ
-  = a t e A_0
-    \left( τ \vc{\hat{x}} + i \vc{\hat{y}} \right)
-    · \vc{ϵ}.
-\end{equation}
+$H'_τ
+= a t e A_0
+\left( τ \vc{\hat{x}} + i \vc{\hat{y}} \right)
+· \vc{ϵ}$.
 The transition rate is proportional to the modulus-squared
 of the optical matrix elements,
 $\vc{P}_{τ σ}^{n n'} \ofK$,
 defined by
-\begin{multline}
+\begin{equation}
   H^A
   = ∑_{\substack{\vK, τ, σ \\ n, n'}}
     \frac{e A_0}{m_0}
     \vc{ϵ} · \vc{P}_{τ σ}^{n n'} \ofK
     {c_{τ σ}^n}^† \ofK
     c_{τ σ}^{n'} \ofK.
-\end{multline}
+\end{equation}
 
 For circularly polarized light, in the absence of superconductivity,
 $\vc{ϵ}_± = \left( \vc{\hat{x}} ± i \vc{\hat{y}} \right) / \sqrt{2}$ and
@@ -71,14 +68,14 @@ multiplied by a coherence factor $\sin^2 {β_{\vK}}$.
 Thus, the superconducting phase exhibits
 the same strong optical-valley coupling
 for circularly polarized light.
-This is shown in \cref{fig:optical.transitions}.
+This is shown in \cref{fig:optical}.
 \begin{figure}
   \caption{%
     Optical transition rate matrix elements
     $\left| P_± \right|
     = \left(c / ℏ \right) \left| \vc{ϵ_±} · P_+^{+ -} \sin {β} \right|$
     for \ce{MoSe2}, \ce{WS2}, and \ce{WSe2}.
-  }\label{fig:optical.transitions}
+  }\label{fig:optical}
   \includegraphics[width=\columnwidth]{figures/optical-transitions}
 \end{figure}
 
