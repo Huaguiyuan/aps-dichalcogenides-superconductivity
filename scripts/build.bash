@@ -64,7 +64,7 @@ function post_build () {
   latexmk -pdf ${input}.tex
   latexmk -c
   latexpand --keep-comments --expand-bbl ${input}.bbl \
-    -o ${input}.expanded.tex ${input}.tex
+    -o ${input}.expanded.tex ${input}.tex ${input}.tex
   mv ${input}.expanded.tex ${input}.tex
 
   echo Removing intermediate build files
