@@ -6,6 +6,9 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 
+% For custom title styles.
+\usepackage{titlesec}
+
 % For derivatives and other math commands.
 \usepackage{cool}
 
@@ -17,6 +20,15 @@
 
 % For Bra-Ket.
 \usepackage{braket}
+
+% Set title styles.
+\titleformat{\section}[runin]
+  {\normalfont\itshape}
+  {\thesection.}{0}{}[:]
+
+\titleformat{\subsection}[runin]
+  {\normalfont\itshape}
+  {\thesection.}{0}{}[:]
 
 % Define \abs and \norm.
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
