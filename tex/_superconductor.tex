@@ -45,6 +45,8 @@ where $ξ_{\vK} = E_{+ ↑}^- \of{\abs{\vK}} - μ$ and
 with $θ_{\vK} = θ_{+↑}^- \of{\abs{\vK}}$.
 This form is identical to the standard BCS Hamiltonian with
 an effective spin index $α$.
+However, the spin state of the cooper pair is an equal superposition
+of the singlet and the $m = 0$ component of spin triplet.
 The corresponding energies,
 $λ_{\vK} = ± \sqrt{ξ_{\vK}^2 + Δ_{\vK}^2}$,
 and quasiparticle eigenstates,
@@ -69,6 +71,7 @@ with $v_{\vR \vR'} = v_0 δ_{\vR \vR'}$
 and $n_{\vR}$ the total Wannier electron density at lattice vector $\vR$.
 Projecting to the states near the chemical potential gives
 \begin{multline}
+  \label{eq:sc.channels}
   P_{τ = σ}^{n = -} \left( H^V \right) =
     \sumKK v \of{\vK' - \vK}
     \\ × \left(
@@ -86,6 +89,8 @@ where
     \sin{\frac{θ_{\vK'}}{2}} \sin{\frac{θ_{\vK}}{2}}
     + \cos{\frac{θ_{\vK'}}{2}} \cos{\frac{θ_{\vK}}{2}}.
 \end{equation}
+The first two terms in \cref{eq:sc.channels} lead to intravalley pairing,
+and the third to intervalley pairing.
 We analyze the possible states within mean field.
 The order parameter is
 \begin{equation}
@@ -103,10 +108,12 @@ thus relabeling $\vK → -\vK$ in the sum gives $Δ_0 = 0$ %
   $v \of{\vK} ≠ v \of{- \vK}$,
   the intravalley order parameters will in general be nonzero.
 }.
-Of the three remaining intervalley angular momentum channels,
+The intervalley pairing has three symmetry channels,
+with the couplings given by
 $g_{\vK} = \sqrt{2}$,
 $g_{\vK} = \sqrt{2} \cos{θ_{\vK}}$,
-and $g_{\vK} = \sqrt{2} \sin{θ_{\vK}}$,
+and $g_{\vK} = \sqrt{2} \sin{θ_{\vK}}$.
+Of the three,
 the constant valued channel is dominant %
 \footnote{%
   For example, using the values for \ce{WSe2},
@@ -114,14 +121,14 @@ the constant valued channel is dominant %
   at the chemical potential.
 }.
 
-This is to be expected as the density-density interaction
+This is to be expected as the local density-density interaction
 leads to the largest pairing for electrons of opposite spins.
 Since the intravalley processes have the same spin,
 they are disfavored as compared to the intervalley pairing.
 This result further suggests that intravalley pairing requires
 odd parity couplings which may arise from spin exchange interactions.
 Thus, the key features of the intrinsic superconducting state
-are identical to to induced system, and we restrict further
+are identical to the proximally induced case, and we restrict further
 analysis to that case.
 We now turn to the question of pair breaking phenomena
 induced either by optical or magnetic fields.
