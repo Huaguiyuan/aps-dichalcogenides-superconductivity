@@ -8,9 +8,12 @@ is the effective tight-biding, low-energy, two-valley Bloch Hamiltonian
   = a t \left(τ k_x σ_x + k_y σ_y \right) ⊗ I_2 \\
     + \frac{Δ}{2} σ_z ⊗ I_2 - λ τ \left(σ_z - 1 \right) ⊗ S_z.
 \end{multline}
-This only involves the angular momentum $d$-orbitals
-$\Ket{d_{xy}} + i τ \Ket{d_{x^2 - y^2}}$ and $\Ket{d_{z^2}}$.
-The operators $σ_i$ are Pauli operators acting on these orbital states.
+The operators $σ_i$ are Pauli operators acting
+on the two Bloch orbital states
+$\ketOrb{ν}{\ofK}$,
+(indexed by $ν = ±$ and which only involve the angular momentum $d$-orbitals
+$\Ket{d_{xy}} + i τ \Ket{d_{x^2 - y^2}}$ and $\Ket{d_{z^2}}$),
+such that $σ_z \ketOrb{±}{\ofK} = ± \ketOrb{±}{\ofK}$.
 The valley index $τ = ±$, corresponding to the $± \vc{K}$ points,
 and the spin index $σ = ±$ (or $σ = ↑↓$), corresponding to the $z$-component
 % TODO The use of sigma is problematic
@@ -42,15 +45,12 @@ We focus on systems which have been doped
 such that the chemical potential $μ$ lies in the upper valance bands.
 Within each band, the Bloch basis eigenstates are written
 in terms of the orbital states as elements on the Block sphere,
-% TODO Need to define what are v^c and v^v.
-%      Maybe a better definition would be
-%      v^1 and v^2 where 1 and 2 are the orbitals.
 \begin{equation}
   \begin{aligned}
     \Ket{u_{τ σ}^n \of{k, ϕ}}
-    = & \cos{\frac{\fnTheta{n}}{2}} \Ket{v_{τ σ}^{\text{c}} \of{k, ϕ}} \\
+    = & \cos{\frac{\fnTheta{n}}{2}} \ketOrb{+}{\of{k, ϕ}} \\
     + e^{-i τ ϕ}
-      & \sin{\frac{\fnTheta{n}}{2}} \Ket{v_{τ σ}^{\text{v}} \of{k, ϕ}},
+      & \sin{\frac{\fnTheta{n}}{2}} \ketOrb{-}{\of{k, ϕ}},
   \end{aligned}
 \end{equation}
 where $k_x + i τ k_y = k e^{i τ ϕ}$ and
