@@ -19,6 +19,6 @@
     "build"
   ],
   "dependencies": {
-    "references": "https://github.com/razor-x/references.git"
+    "references": "https://github.com/razor-x/references.git#master"
   }
 }
