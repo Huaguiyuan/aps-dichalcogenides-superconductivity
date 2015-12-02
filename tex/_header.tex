@@ -34,18 +34,15 @@
 \titlespacing{\subsection}
   {0pt}{0.5\baselineskip}{\baselineskip}
 
-% Define \abs and \norm.
+% Define \abs.
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}
 
-% Swap the definition of \abs* and \norm*, so that \abs and \norm
+% Swap the definition of \abs* and \abs, so that \abs
 % resizes the size of the brackets and the starred version does not.
 \makeatletter
 \let\oldabs\abs{}
 \def\abs{\@ifstar{\oldabs}{\oldabs*}}
-%
-\let\oldnorm\norm{}
-\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
 \makeatother
 
 % Define the real part function.
