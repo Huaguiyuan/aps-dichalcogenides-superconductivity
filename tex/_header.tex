@@ -64,6 +64,9 @@
 % Normal ordering.
 \newcommand\normalorder[1]{{:}\mkern1mu#1\mkern1.6mu{:}}
 
+% Spin.
+\newcommand{\s}{s}
+
 % Function arguments.
 \newcommand{\of}[1]{\left(#1\right)}
 \newcommand{\ofK}{\of{\vK}}
@@ -71,12 +74,12 @@
 \newcommand{\ev}[1]{\left\langle#1\right\rangle}
 
 % Functions.
-\newcommand{\fnEnergy}[1]{E_{τ σ}^{#1}}
-\newcommand{\fnTheta}[1]{θ_{τ σ}^{#1} \of{k}}
+\newcommand{\fnEnergy}[1]{E_{τ {\s}}^{#1}}
+\newcommand{\fnTheta}[1]{θ_{τ {\s}}^{#1} \of{k}}
 
 % Partials
 \newcommand{\sumK}{\sideset{}{'}∑_{\vK}}
 \newcommand{\sumKK}{\sideset{}{'}∑_{\vK, \vK'}}
 
 % Kets
-\newcommand{\ketOrb}[2]{\Ket{v_{τ σ}^{#1} #2}}
+\newcommand{\ketOrb}[2]{\Ket{v_{τ {\s}}^{#1} #2}}
