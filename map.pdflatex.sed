@@ -4,6 +4,7 @@
 # can be used to replace the offending code with
 # the corresponding LaTeX macros.
 # This should not be needed when using XeLaTeX.
+s/\\vc{ϵ}/\\boldsymbol{\\epsilon}/g
 s/·/{\\cdot}/g
 s/†/{\\dagger}/g
 s/↓/{\\downarrow}/g
@@ -22,7 +23,6 @@ s/∑/{\\sum}/g
 s/×/{\\times}/g
 s/⨯/{\\times}/g
 s/↑/{\\uparrow}/g
-s/\\vc{ϵ}/\\boldsymbol{\\epsilon}/g
 s/α/{\\alpha}/g
 s/β/{\\beta}/g
 s/Δ/{\\Delta}/g
