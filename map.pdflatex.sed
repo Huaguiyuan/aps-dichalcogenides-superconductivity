@@ -25,6 +25,7 @@ s/⨯/{\\times}/g
 s/↑/{\\uparrow}/g
 s/α/{\\alpha}/g
 s/β/{\\beta}/g
+s/γ/{\\gamma}/g
 s/Δ/{\\Delta}/g
 s/δ/{\\delta}/g
 s/ε/{\\varepsilon}/g
@@ -38,5 +39,6 @@ s/σ/{\\sigma}/g
 s/τ/{\\tau}/g
 s/ϕ/{\\phi}/g
 s/ψ/{\\psi}/g
+s/χ/{\\chi}/g
 s/Ω/{\\Omega}/g
 s/ω/{\\omega}/g
