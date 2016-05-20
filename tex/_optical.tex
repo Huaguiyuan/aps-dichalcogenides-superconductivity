@@ -1,13 +1,12 @@
 \section{Optoelectronic coupling}
 
-The non-interacting system displays valley selectivity.
-One circular polarization couples to one valley,
-and the opposite to the other.
-We investigate the extent to which this property
-is inherited by the superconducting phase by generalizing
-the optical transition rate to the multi-particle interacting system.
-Note that one does not expect any dipolar coupling
-since the orbitals involved have the same parity.
+The noninteracting system displays valley selective optical excitations. Light
+of a particular polarity only couples to one valley. Since the superconducting state is
+a coherent condensate admixing the two valleys, the question we address is whether pair breaking
+also displays valley selectivity. In particular we explore whether or not the two quasiparticles generated
+by circularly polarized light, with total energy larger than the $\Delta+\Delta _{\vec{k}}$, occupy opposite
+valleys, with one in the conduction band and the other in the valence band.
+
 The optical excitations arise from the Berry curvature,
 which acts as an effective angular momentum.
 The electromagnetic potential $\vc{A}$,
@@ -58,12 +57,12 @@ $\vc{ϵ}_± = \left( \vc{\hat{x}} ± i \vc{\hat{y}} \right) / \sqrt{2}$ and
     \sin^2 {\frac{\fnTheta{∓ τ}}{2}}.
 \end{equation}
 
-The transition rate for optical excitations above the BCS ground state
+The transition rate for optical excitations from BCS ground state
 is given by \cref{eq:optical}
 multiplied by a coherence factor $\sin^2 {β_{\vK}}$.
 Since $\fnTheta{-} - \fnTheta{+} = τ π$,
 switching either the valley or polarization transforms
-$\sin → \cos$ in \cref{eq:optical}, giving two unique matrix elements,
+$\sin → \cos$ in \cref{eq:optical}, giving matrix elements,
 $\left| P_± \right| = \left| \vc{ϵ}_± · P_+^{+ -} \sin {β} \right|$,
 corresponding to matching ($P_+$) or mismatching ($P_-$)
 polarization-valley indexes.
@@ -73,7 +72,7 @@ polarization-valley indexes.
     Optical transition rate matrix elements
     $\left| P_± \right|^2$
     in the superconducting phase
-    as a function of the ratio of the superconducting state energy
+    as a function of the ratio of the quasiparticle energy
     $λ_{\vK}$ to the superconducting gap $Δ_{\vK}$.
     Material parameters for \ce{MoSe2}, \ce{WS2}, and \ce{WSe2}
     are given in~\cite{PhysRevLett.108.196802}
@@ -88,17 +87,13 @@ polarization-valley indexes.
 
 For a given valley, a chosen polarization of light couples more strongly
 than the other, as is evident comparing $\abs{P_+}^2$ to $\abs{P_-}^2$
-and shown in \cref{fig:optical}.
-Thus, the superconducting phase exhibits
-the same strong optical-valley coupling for circularly polarized light.
-The suppression of the matrix elements above the chemical potential
-($λ_{\vK} > 0$)
-reflects the fact that the BCS states include the Fermi distribution.
-As such, the matrix element is still finite,
-but is multiplied by a vanishing occupation probability.
-The key new feature is the suppression of the valley contrast
-near the chemical potential.
-Nevertheless, for energies where the Cooper pair
-is broken into quasiparticles well above the gap,
-the superconducting state inherits the
-valley selective phenomena of the non-interacting system.
+and shown in \cref{fig:optical}. For incident light with energy $\Delta + |\lambda_{\vc{k}}|$,
+right circurlalrly polarized light (+) has a higher probability of promoting a quasiparticle to the
+conduction band as reflected in larger matrix element $|P_{+}|^{2}>>|P_{-}|^{2}$. The partner of the copper
+pair is in the valence band in the opposite valley. The dependance on polarization
+is opposite in the other valley.
+
+This is a key new result and opens the door for valley control of excitations
+from a coherent ground state. For example, the two quasiparticles have the same Berry curvature (see below) and charge.
+In the presence of an electric filed, they both acquire the same transverse anomalous velocity. Thus an anomalous Hall effect
+is expected, with not accompanying spin current in contrast to the response in the normal state.
