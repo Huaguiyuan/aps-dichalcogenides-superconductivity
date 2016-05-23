@@ -13,6 +13,7 @@ s/ℏ/{\\hbar}/g
 s/∓/{\\mp}/g
 s/∇/{\\nabla}/g
 s/≠/{\\neq}/g
+s/≫/{\\gg}/g
 s/⊗/{\\otimes}/g
 s/∥/{\\parallel}/g
 s/±/{\\pm}/g
