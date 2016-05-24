@@ -61,6 +61,24 @@ $\vc{ϵ}_± = \left( \vc{\hat{x}} ± i \vc{\hat{y}} \right) / \sqrt{2}$ and
     \sin^2 {\frac{\fnTheta{∓ τ}}{2}}.
 \end{equation}
 
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figures/optical-transitions}
+  \caption{%
+    Optical transition rate matrix elements
+    $\left| P_± \right|^2$
+    in the superconducting phase
+    as a function of the ratio of the quasiparticle energy
+    $λ_{\vK}$ to the superconducting gap $Δ_{\vK}$.
+    Material parameters for \ce{MoSe2}, \ce{WS2}, and \ce{WSe2}
+    are given in~\cite{PhysRevLett.108.196802}
+    and a gap of $Δ_{\vK} = \SI{7.5}{\milli\electronvolt}$
+    is chosen for illustrative purposes.
+    The order-of-magnitude contrast between
+    $\left|P_+\right|^2$ and $\left|P_-\right|^2$
+    causes the optical-valley selectivity.
+  }\label{fig:optical}
+\end{figure}
+
 The transition rate for optical excitations from BCS ground state
 is given by \cref{eq:optical}
 multiplied by a coherence factor $\sin^2 {β_{\vK}}$.
@@ -70,37 +88,6 @@ $\sin → \cos$ in \cref{eq:optical}, giving matrix elements,
 $\left| P_± \right| = \left| \vc{ϵ}_± · P_+^{+ -} \sin {β} \right|$,
 corresponding to matching ($P_+$) or mismatching ($P_-$)
 polarization-valley indexes.
-
-\begin{figure}
-  \caption{}
-  \begin{subfigure}{\columnwidth}
-    \includegraphics[width=\columnwidth]{figures/bcs-excitation}
-    \caption{%
-      Pair-breaking by right circularly polarized light
-      leads to an electron in the conduction band of the right valley
-      and a partner in the valence band of the left valley.
-      The valleys interchange for left circularly polarized light.
-    }\label{fig:optical-excitation}
-  \end{subfigure}
-  \begin{subfigure}{\columnwidth}
-    \includegraphics[width=\columnwidth]{figures/optical-transitions}
-    \caption{%
-      Optical transition rate matrix elements
-      $\left| P_± \right|^2$
-      in the superconducting phase
-      as a function of the ratio of the quasiparticle energy
-      $λ_{\vK}$ to the superconducting gap $Δ_{\vK}$.
-      Material parameters for \ce{MoSe2}, \ce{WS2}, and \ce{WSe2}
-      are given in~\cite{PhysRevLett.108.196802}
-      and a gap of $Δ_{\vK} = \SI{7.5}{\milli\electronvolt}$
-      is chosen for illustrative purposes.
-      The order-of-magnitude contrast between
-      $\left|P_+\right|^2$ and $\left|P_-\right|^2$
-      causes the optical-valley selectivity.
-    }\label{fig:optical}
-  \end{subfigure}
-\end{figure}
-
 For a given valley, a chosen polarization of light couples more strongly
 than the other, as is evident comparing $\abs{P_+}^2$ to $\abs{P_-}^2$
 and shown in \cref{fig:optical}.
@@ -108,7 +95,8 @@ For incident light with energy $Δ + \abs{λ_{\vK}}$,
 right circularly polarized light ($+$) has a higher probability
 of promoting a quasiparticle to the conduction band,
 as reflected in larger matrix element $\abs{P_+}^2 ≫ \abs{P_-}^2$.
-The partner of the copper pair is in the valence band in the opposite valley.
+As depicted in \cref{fig:optical-excitation},
+the partner of the Cooper pair is in the valence band in the opposite valley.
 The dependence on polarization is opposite in the other valley.
 
 This is a key new result and opens the door for valley control of excitations
@@ -120,3 +108,13 @@ they both acquire the same transverse anomalous velocity.
 Thus an anomalous Hall effect is anticipated,
 with no accompanying spin current
 in contrast to the response in the normal state.
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figures/bcs-excitation}
+  \caption{%
+    Pair-breaking by right circularly polarized light
+    leads to an electron in the conduction band of the right valley
+    and a partner in the valence band of the left valley.
+    The valleys interchange for left circularly polarized light.
+  }\label{fig:optical-excitation}
+\end{figure}
