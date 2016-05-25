@@ -34,6 +34,10 @@
 \titlespacing{\subsection}
   {0pt}{0.5\baselineskip}{\baselineskip}
 
+% Paragraph numbers in Introduction.
+\newcounter{intropara}
+\newcommand\introparanum{\par\refstepcounter{intropara}(\theintropara)\space}
+
 % Define \abs.
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}
