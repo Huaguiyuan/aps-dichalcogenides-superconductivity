@@ -19,6 +19,6 @@
     "build"
   ],
   "dependencies": {
-    "references": "razor-x/references#v0.2.0"
+    "references": "razor-x/references#v0.3.0"
   }
 }
