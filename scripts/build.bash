@@ -8,7 +8,7 @@ input=${2}
 dst=${3}
 
 # List all required references files here.
-references='dichalcogenides.bib software.bib'
+references='dichalcogenides.bib software.bib superconductivity.bib'
 
 out_path="${dst}/${input}"
 out_archive="${out_path}.tar.gz"
