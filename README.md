@@ -5,7 +5,7 @@
 
 ## Description
 
-Superconductivity in Transition Metal Dichalcogenides.
+Unconventional superconductivity and anomalous response in hole-doped transition metal dichalcogenides.
 
 ## Requirements
 

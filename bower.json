@@ -1,7 +1,7 @@
 {
   "name": "aps-dichalcogenides-superconductivity",
   "version": "0.0.0",
-  "description": "Superconductivity in Transition Metal Dichalcogenides.",
+  "description": "Unconventional superconductivity and anomalous response in hole-doped transition metal dichalcogenides.",
   "main": "tex/aps-dichalcogenides-superconductivity.tex",
   "authors": [
     "Evan Sosenko <razorx@evansosenko.com>"
