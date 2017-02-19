@@ -1,49 +1,225 @@
-\section{Effect of in-plane magnetic field}
+\section{In-plane magnetic field and scalar disorder}
 
-We briefly discuss the pair-breaking effects
-of an in-plane magnetic field and non-magnetic disorder.
-(The details are presented elsewhere %
-\footnote{%
-  Junhua Zhang, Evan Sosenko, and Vivek Aji, in preparation.}.)
-The superconducting state exhibits an anomalous magnetic response
-due to the large spin-orbit interaction and spin splitting $2λ$.
-Unlike conventional superconductors,
-where a uniform magnetic field
-leads to pair-breaking from spin paramagnetism,
-here the Zeeman coupling from an in-plane magnetic field
-in the clean system modifies the spin structure
-of the Cooper pair and parametrically suppresses $T_c$.
-Modification of the effective coupling, rather than pair-breaking,
-causes this phenomena.
-While, in compliance with Anderson's theorem,
-the lack of pair-breaking for non-magnetic impurities
-is recovered at zero field
-(since time reversal symmetry is preserved),
-the transition is indeed suppressed by a pair-breaking effect
-from the combination of the magnetic field and scalar impurities.
+In this section we discuss the effects of in-plane magnetic fields
+and non-magnetic impurities on the superconducting state. We consider
+the lightly hole-doped monolayer TMDs in the regime where the Fermi
+level crosses the upper valence bands and is well separated from the
+lower valence bands. In this regime, the system is a spin-valley locking
+system with the spin-opposite Fermi pocket at each valley. Without loss of generality, we adopt a simplified model taking
+into account the valence bands only. In a quasi two-dimensional (2D)
+system, an in-plane magnetic field couples to quasiparticles through
+spin paramagnetism with negligible orbital interactions. Applying
+a uniform in-plane magnetic field in the $x$ direction $\mathbf{B}=(\begin{array}{ccc}
+B, & 0, & 0\end{array})$, the system is by the Hamiltonian ($\hbar=k_{B}=c=1$):
+\begin{equation}
+\mathcal{H}_{\tau}(\mathbf{k})=-\frac{k^{2}}{2m}-\mu+\tau E_{soc}\hat{s}_{z}+\mu_{B}B\hat{s}_{x}\label{eq: valley_Hamiltonian}
+\end{equation}
+which is acting on the valley-spin basis $\phi_{\tau}(\mathbf{k})=\left[\begin{array}{cc}
+c_{\tau\uparrow}(\mathbf{k}), & c_{\tau\downarrow}(\mathbf{k})\end{array}\right]^{T}$, where $\mu$ is the chemical potential, $\tau=\pm$ is the valley
+index, $\hat{s}$'s are Pauli matrices operating in spin space, $\mu_{B}$
+is the Bohr magneton, and the dispersion relations of the upper and
+lower valence bands have been approximated by a quadratic form with
+an effective mass $m=E_{g}/\left(2a^{2}t^{2}\right)$ ($E_{g}$ is the large energy gap between the conduction and valence bands $E_{g}\gg E_{soc}$, $a$ and $t$ are defined under Eq. (\ref{eq:H_tau_0})) and the momentum $\mathbf{k}=\left(\begin{array}{cc}
+k_{x}, & k_{y}\end{array}\right)$ measured from the corresponding valley center with $k=|\mathbf{k}|$.
+Note that in this section we use $\mathbf{k}$ to represent momentum
+measured from the corresponding valley center and $\mathbf{p}$ to
+represent momentum measured from the Brillouin zone (BZ) center. We
+use the notation that $c_{\tau s}^{\dagger}(\mathbf{k})$ ($c_{\tau s}(\mathbf{k})$)
+creates (annihilates) a quasiparticle with momentum $\mathbf{k}$
+and spin $s$ in the valley $\tau$, and $c_{s}^{\dagger}(\mathbf{p})$
+($c_{s}(\mathbf{p})$) creates (annihilates) a quasiparticle with
+momentum $\mathbf{p}$ and spin $s$. Hamiltonian $\mathcal{H}_{\tau}(\mathbf{k})$
+has the spectrum $E_{\tau,u/l}=-\frac{k^{2}}{2m}-\mu\pm\sqrt{E_{soc}^{2}+\left(\mu_{B}B\right)^{2}}$
+with $u$ for the upper ($+$) and $l$ for the lower ($-$) band
+at each valley, and the eigen states: $\varphi_{\tau}(\mathbf{k})=\left[\begin{array}{cc}
+c_{\tau,u}(\mathbf{k}), & c_{\tau,l}(\mathbf{k})\end{array}\right]^{T}$. $c_{\tau,u}$ and $c_{\tau,l}$ correspond to the quasiparticles
+in the band basis which is related to the spin basis through a field-
+and valley-dependent unitary transformation $U_{\tau}(b)$: $\varphi_{\tau}(\mathbf{k})=U_{\tau}(b)\phi_{\tau}(\mathbf{k})$,
+where $b\equiv\frac{\mu_{B}B}{E_{soc}}$ is the dimensionless magnetic
+field. Applying a uniform in-plane magnetic field shifts both the
+upper (lower) valence bands at the two valleys
+by the same amount, so that the perfect nesting condition between
+the Fermi pockets at the two valleys remains. On the other hand, the
+quasiparticle spin acquires a finite in-plane component, i.e., deviating
+from $\pm z$ direction. Explicitly we have $\langle\tau,u\left|\hat{s}_{z}\right|\tau,u\rangle=\frac{\tau}{2\sqrt{1+b^{2}}}$,
+$\langle\tau,l\left|\hat{s}_{z}\right|\tau,l\rangle=\frac{-\tau}{2\sqrt{1+b^{2}}}$,
+and $\langle\tau,u\left|\hat{s}_{x}\right|\tau,u\rangle=\frac{b}{2\sqrt{1+b^{2}}}$,
+$\langle\tau,l\left|\hat{s}_{x}\right|\tau,l\rangle=\frac{-b}{2\sqrt{1+b^{2}}}$.
+Therefore, the quasiparticle spin tilts towards the field direction
+in the upper valence bands and tilts against the field direction in
+the lower valence bands at both valleys. The change of quasiparticle
+spin orientation induced by the in-plane field modifies the internal
+structure of the Cooper pair and affects the pairing strength as shown
+below.
 
-The pair-breaking effect is characterized by the parameter
-$δ_c
-= τ_0^{-1} {\left( μ_B H_c^∥ / λ \right)}^2$,
-where $μ_B$ is the Bohr magneton and $τ_0^{-1}$ is
-the collision rate resulting from the scalar disorder potential.
-Note that for a clean system, where $\tau_{0} \rightarrow \infty$,
-we recover the result that there is no pair-breaking.
-Assuming a continuous phase transition induced by the magnetic field,
-the pair-breaking equation at temperature $T$ is
-$\log{\of{T_c' / T}}
-= ψ \of{1 / 2 + δ_c / {2 π k_B T}}
-- ψ \of{1 / 2}$,
-where $ψ \of{z}$ is the digamma function,
-$T_c'$ is the transition temperature
-in the clean system
-(weakly suppressed by the in-plane field),
-and $k_B$ is the Boltzmann constant.
-This equation determines the upper critical field
-$H_c^∥ \of{T}$ as a function of temperature.
-Clearly, the upper critical field is greatly enhanced
-by the large spin-orbit interaction.
-At zero temperature, the upper
-critical field is approximately
-$μ_B H_c^∥ \of{0}
-= λ \sqrt{2 π k_B T_c' τ_0 e^{ψ \of{1 / 2}}}$.
+To evaluate the effect of the magnetic field on the superconductivity we follow the procedure used in section  \ref{sec_sc}. A local attractive density-density
+interaction with pairing strength $v_{0}$ can be written as: $\mathcal{H}_{int}=-v_{0}\int d^{2}\mathbf{r}\rho(\mathbf{r})\rho(\mathbf{r})$,
+with the quasiparticle density $\rho(\mathbf{r})=\sum_{s}c_{s}^{\dagger}(\mathbf{r})c_{s}(\mathbf{r})$
+where $c_{s}^{\dagger}(\mathbf{r})$ ($c_{s}(\mathbf{r})$) is the
+Fourier transform of $c_{s}^{\dagger}(\mathbf{p})$ ($c_{s}(\mathbf{p})$).
+Transforming to momentum space and projecting onto the upper valence
+bands, the pairing Hamiltonian has the form
+\begin{equation}
+\mathcal{H}_{p}=-v'(b)\sum_{\mathbf{k},\mathbf{k}'}c_{+}^{\dagger}(\mathbf{k})c_{-}^{\dagger}(-\mathbf{k})c_{-}(-\mathbf{k}')c_{+}(\mathbf{k}')\label{eq: pairing_Hamiltonian}
+\end{equation}
+where we have ignored the upper-band subscript $u$ in the operators
+$c_{\tau,u}^{\dagger}$ and $c_{\tau,u}$. $v'(b)$ is the effective
+pairing strength in the presence of in-plane magnetic field $v'(b)\equiv\frac{1}{1+b^{2}}v_{0}$.
+The Hamiltonian $\mathcal{H}_{p}$ describes an inter-valley pairing
+with a pairing strength $v'$ suppressed by the in-plane field. At
+zero field, $v'=v_{0}$, $c_{+}^{\dagger}=c_{+\uparrow}^{\dagger}$ and
+$c_{-}^{\dagger}=c_{-\downarrow}^{\dagger}$, the pairing occurs between
+opposite spins. At finite fields, $v'<v_{0}$, the quasiparticle at valley
+$+$ ($-$), represented by $c_{+}^{\dagger}$ ($c_{-}^{\dagger}$),
+has its up (down) spin tilted towards the field direction. As a result,
+the inter-valley pairing contains equal-spin pairing component in
+the presence of in-plane field.
+
+We write the mean-field Hamiltonian, using the Nambu-valley basis
+$\Psi_{\mathbf{k}}=\left[\begin{array}{cccc}
+c_{+}(\mathbf{k}), & c_{-}(\mathbf{k}), & c_{-}^{\dagger}(-\mathbf{k}), & -c_{+}^{\dagger}(-\mathbf{k})\end{array}\right]^{T}$, as
+\begin{equation}
+\mathcal{H}_{MF}(\mathbf{k})=\xi_{\mathbf{k}}\hat{\eta}_{z}-\Delta\hat{\eta}_{x}\label{eq: Mean_Field_Hamiltonian}
+\end{equation}
+where $\hat{\eta}$'s are Pauli matrices acting on Nambu (particle-hole)
+space, $\xi_{\mathbf{k}}=-\frac{k^{2}}{2m}-\mu+\sqrt{E_{soc}^{2}+\left(\mu_{B}B\right)^{2}}$,
+and the mean field $\Delta=v'(b)\sum_{\mathbf{k}'}\left\langle c_{-}(-\mathbf{k}')c_{+}(\mathbf{k}')\right\rangle $
+describes an inter-valley pairing field, which we choose to be real
+for convenience.
+
+In a conventional 2D superconductor with spin-degenerate Fermi surface,
+the applying of an in-plane magnetic field causes an energy splitting
+between opposite-spin bands. This energy mismatch between opposite
+spins gives rise to a pair-breaking effect in the clean system characterized
+by the pair-breaking equation for temperature $T\leq T_{c}^{0}$ \cite{Maki01061964}:
+\begin{equation}
+\ln\frac{T_{c}^{0}}{T}=\frac{1}{2}\left[\psi(\frac{1}{2}+\frac{i\mu_{B}B_{c}}{2\pi T})+\psi(\frac{1}{2}-\frac{i\mu_{B}B_{c}}{2\pi T})\right]-\psi(\frac{1}{2}),\label{eq: conventional_pair_breaking_eq}
+\end{equation}
+where $T_{c}^{0}$ is the transition temperature at zero field in
+the clean system and $\psi(z)$ is the digamma function. This equation
+determines the critical field $B_{c}$ that destroys the superconducting
+state at temperature $T\leq T_{c}^{0}$ from spin paramagnetism. Furthermore,
+the scattering from non-magnetic impurities does not alter this pair-breaking
+equation (\ref{eq: conventional_pair_breaking_eq}) such that the
+critical field remains the same regardless of the presence of scalar
+disorders \cite{Maki01061964}.
+
+Unlike the conventional 2D superconductors, the two single-spin Fermi
+pockets at different valleys in our system remains to be perfectly
+nested without energy mismatch caused by spin paramagnetism, except
+that the spins at the two pockets are no longer opposite with equal-spin
+components induced by the field. These two differences give rise to
+new features in the spin-valley locking system on the effects of in-plane
+magnetic fields. First, in the clean limit, the presence of in-plane
+magnetic fields does not lead to a pair-breaking effect for the lack
+of energy mismatch but mildly suppresses the transition temperature
+through the weakening of the pairing strength. The suppressed transition
+temperature $T_{c}^{'}$ is related to zero-field transition temperature
+$T_{c}^{0}$ as $T_{c}^{'}=T_{c}^{0}\exp\left[-\frac{b^{2}}{v_{0}N_{F}}\right]$
+in the mean-field theory, where $N_{F}$ is the density of states
+at the Fermi level. Second, the superconducting state is no longer
+immune to the scalar disorder, since non-magnetic disorder potential
+can cause inter-valley scattering due to the field-induced parallel-spin
+components on the two pockets. This interplay between the in-plane
+magnetic field and the scalar disorder leads to a pair-breaking effect.
+
+In the presence of dilute randomly-distributed non-magnetic impurities
+the Hamiltonian for short-range impurity potential is given by
+\begin{equation}
+\mathcal{H}_{imp}=\sum_{j}\int d^{2}\mathbf{r}U_{0}\delta(\mathbf{r}-\mathbf{R}_{j})\rho(\mathbf{r})\label{eq: impurity_H_real}
+\end{equation}
+where $\mathbf{R}_{j}$ is the position of the $j$th impurity and
+$U_{0}$ is the disorder strength. Transforming to momentum space
+and projecting onto the upper valence bands, $\mathcal{H}_{imp}$
+can be written, using the Nambu-valley basis $\Psi_{\mathbf{k}}$,
+as
+\begin{equation}
+\mathcal{H}_{imp}=\sum_{\mathbf{k}_{1},\mathbf{k}_{2}}\sum_{j}e^{i(\mathbf{k}_{1}-\mathbf{k}_{2})\cdot\mathbf{R}_{j}}\Psi_{\mathbf{k}_{1}}^{\dagger}\hat{U}\Psi_{\mathbf{k}_{2}}\label{eq: impurity_H_momentum}
+\end{equation}
+with the disorder scattering vertex $\hat{U}$ taking the form
+\begin{equation}
+\hat{U}=U_{0}\hat{\eta}_{z}+U_{0}\frac{b}{\sqrt{1+b^{2}}}\hat{\tau}_{x}\label{eq: disorder_scattering_vertex}
+\end{equation}
+where $\hat{\tau}$'s are Pauli matrices operating in valley space.
+The first term in $\hat{U}$ corresponds to intra valley scattering
+and the second term corresponds to inter valley scattering. Note that
+we have ignored the factors $e^{i(\pm2\mathbf{K})\cdot\mathbf{R}_{j}}$
+in the inter valley terms because $e^{i(2\mathbf{K})\cdot\mathbf{R}_{j}}$
+and $e^{i(-2\mathbf{K})\cdot\mathbf{R}_{j}}$ will appear in pair
+and then cancel each other in the diagrammatical calculation of self
+energy.
+
+The self energy due to impurity scattering after averaging over randomly-distributed
+impurity configurations, in the first-order Born approximation, is
+obtained as \cite{abrikosov1961,maki1969}
+\begin{equation}
+\hat{\Sigma}(\mathbf{k},i\omega_{n})=n_{imp}\int\frac{d^{2}\mathbf{k}'}{(2\pi)^{2}}\hat{U}\hat{\mathcal{G}}_{0}(\mathbf{k}',i\omega_{n})\hat{U}\label{eq: self_energy}
+\end{equation}
+where $n_{imp}$ is the impurity concentration, and $\hat{\mathcal{G}}_{0}$
+is the Green's function matrix of the clean system $\hat{\mathcal{G}}_{0}(\mathbf{k}',i\omega_{n})=\left[i\omega_{n}-\xi_{\mathbf{k}'}\hat{\eta}_{z}+\Delta\hat{\eta}_{x}\right]^{-1}$
+with the Matsubara frequencies $\omega_{n}=(2n+1)\pi T$. After integrating
+out $\xi$ in the self-energy, the disorder renormalized Green's function
+matrix $\hat{\mathcal{G}}=\left[\hat{\mathcal{G}}_{0}^{-1}-\hat{\Sigma}\right]^{-1}$
+can be parametrized as
+\begin{equation}
+\hat{\mathcal{G}}(\mathbf{k},i\omega_{n})=\left[i\tilde{\omega}_{n}-\xi_{\mathbf{k}}\hat{\eta}_{z}+\tilde{\Delta}\hat{\eta}_{x}+iF(\omega_{n})\hat{\eta}_{z}\hat{\tau}_{x}\right]^{-1}\label{eq: renormalized_G}
+\end{equation}
+where the quantities $\tilde{\omega}_{n}$, $\tilde{\Delta}$, and
+$F(\omega_{n})$ have the definitions
+\begin{equation}
+\tilde{\omega}_{n}\equiv\omega_{n}+\left(\frac{1}{2\tau_{1}}+\frac{1}{2\tau_{2}}\right)\frac{\omega_{n}}{\sqrt{\omega_{n}^{2}+\Delta^{2}}},\label{eq: renormalized_omega}
+\end{equation}
+\begin{equation}
+\tilde{\Delta}\equiv\Delta+\left(\frac{1}{2\tau_{1}}-\frac{1}{2\tau_{2}}\right)\frac{\Delta}{\sqrt{\omega_{n}^{2}+\Delta^{2}}},\label{eq: renormalized_Delta}
+\end{equation}
+\begin{equation}
+F(\omega_{n})\equiv\frac{1}{2\tau_{1}}\frac{\omega_{n}}{\sqrt{\omega_{n}^{2}+\Delta^{2}}}\frac{2b}{\sqrt{1+b^{2}}}.\label{eq: function_F}
+\end{equation}
+Here $1/\tau_{1}$ and $1/\tau_{2}$ are the collision rates corresponding
+to the disorder-induced intra- and inter-valley scattering, respectively,
+with the expressions
+\begin{equation}
+\frac{1}{\tau_{1}}=2U_{0}^{2}n_{imp}\pi N_{F},\ \ \frac{1}{\tau_{2}}=\frac{1}{\tau_{1}}\frac{b^{2}}{1+b^{2}}.\label{eq: collision_rates}
+\end{equation}
+
+
+In the superconducting state, the self-consistency equation for the
+order parameter is given by
+\begin{equation}
+\Delta=\frac{1}{4}v'T\sum_{n}\int\frac{d^{2}\mathbf{k}}{(2\pi)^{2}}\mathrm{Tr}\left[\hat{\eta}_{x}\hat{\mathcal{G}}(\mathbf{k},i\omega_{n})\right]\label{eq: self_consistency_eq}
+\end{equation}
+where $\mathrm{Tr}\left[\dots\right]$ is the trace of the argument.
+Explicitly it has the form, from Eq. (\ref{eq: renormalized_G}),
+\begin{equation}
+\Delta=v'\pi N_{F}T\sum_{n}\frac{\tilde{\Delta}}{\sqrt{\tilde{\omega}_{n}^{2}+\tilde{\Delta}^{2}}}.\label{eq: explicit_self_consistency_eq}
+\end{equation}
+Linearizing the self-consistency equation (\ref{eq: explicit_self_consistency_eq})
+near the critical field $B_{c}$, we obtain the pair-breaking equation
+due to the interplay between the in-plane field and the scalar disorder,
+\begin{equation}
+\ln\frac{T_{c}^{'}(b_{c})}{T}=\psi\left(\frac{1}{2}+\frac{\delta_{c}}{2\pi T}\right)-\psi\left(\frac{1}{2}\right)\label{eq: pair_breaking_eq}
+\end{equation}
+where $T_{c}^{'}(b_{c})$ is the transition temperature in the clean
+system in the presence of field $b_{c}$: $T_{c}^{'}(b_{c})=T_{c}^{0}\exp\left[-\frac{b_{c}^{2}}{v_{0}N_{F}}\right]$,
+and the pair-breaking parameter $\delta_{c}$ arises from the valley-flip
+scattering process,
+\begin{equation}
+\delta_{c}\equiv\frac{1}{\tau_{2}}\biggl|_{b_{c}}=\frac{1}{\tau_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}},\ \ b_{c}\equiv\frac{\mu_{B}B_{c}}{E_{soc}}.\label{eq: parameter_pair_breaking}
+\end{equation}
+Equation (\ref{eq: pair_breaking_eq}) determines the in-plane critical
+field $B_{c}(T)$ at temperature $T\leq T_{c}^{'}$. For $b_{c}\equiv\frac{\mu_{B}B_{c}}{E_{soc}}\ll1$,
+the pair-breaking parameter takes the simple form $\delta_{c}\approx\frac{1}{\tau_{1}}\left(\mu_{B}B_{c}/E_{soc}\right)^{2}$.
+
+As $T\rightarrow0$, the pair-breaking equation (\ref{eq: pair_breaking_eq})
+can be approximated by the asymptotic expansion of the digamma function,
+which leads to $2\pi T_{c}^{'}\exp\left[\psi(\frac{1}{2})\right]=\frac{1}{\tau_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}}.$
+At finite disorder concentration $\frac{1}{\tau_{1}}\neq0$, when
+$b_{c}\ll1$ with $T_{c}^{'}\approx T_{c}^{0}$, the critical field at zero temperature is approximated as
+\begin{equation}
+\mu_{B}B_{c}\biggl|_{T\rightarrow0}\approx E_{soc}\left[2\pi e^{\psi(1/2)}k_{B}T_{c}^{0}\tau_{1}/\hbar\right]^{1/2}.\label{eq: zero_T_Bc}
+\end{equation}
+where we have put back the Boltzmann constant $k_{B}$ and
+Planck constant $\hbar$. The large spin-orbit interaction $E_{soc}$
+($\sim150-500$ meV) in monolayer TMDs indicates that the in-plane
+critical field $B_{c}$ is significantly enhanced, well beyond the
+Pauli limit.
