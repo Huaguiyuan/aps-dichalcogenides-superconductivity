@@ -12,14 +12,14 @@ spin paramagnetism with negligible orbital interactions. Applying
 a uniform in-plane magnetic field in the $x$ direction $\mathbf{B}=(\begin{array}{ccc}
 B, & 0, & 0\end{array})$, the system is by the Hamiltonian ($\hbar=k_{B}=c=1$):
 \begin{equation}
-\mathcal{H}_{\tau}(\mathbf{k})=-\frac{k^{2}}{2m}-\mu+\tau E_{soc}\hat{s}_{z}+\mu_{B}B\hat{s}_{x}\label{eq: valley_Hamiltonian}
+\mathcal{H}_{\tau}(\mathbf{k})=-\frac{k^{2}}{2m}-\mu+\tau E_{\text{soc}}\hat{s}_{z}+\mu_{B}B\hat{s}_{x}\label{eq: valley_Hamiltonian}
 \end{equation}
 which is acting on the valley-spin basis $\phi_{\tau}(\mathbf{k})=\left[\begin{array}{cc}
 c_{\tau\uparrow}(\mathbf{k}), & c_{\tau\downarrow}(\mathbf{k})\end{array}\right]^{T}$, where $\mu$ is the chemical potential, $\tau=\pm$ is the valley
 index, $\hat{s}$'s are Pauli matrices operating in spin space, $\mu_{B}$
 is the Bohr magneton, and the dispersion relations of the upper and
 lower valence bands have been approximated by a quadratic form with
-an effective mass $m=E_{g}/\left(2a^{2}t^{2}\right)$ ($E_{g}$ is the large energy gap between the conduction and valence bands $E_{g}\gg E_{soc}$, $a$ and $t$ are defined under Eq. (\ref{eq:H_tau_0})) and the momentum $\mathbf{k}=\left(\begin{array}{cc}
+an effective mass $m=E_{g}/\left(2a^{2}t^{2}\right)$ ($E_{g}$ is the large energy gap between the conduction and valence bands $E_{g}\gg E_{\text{soc}}$, $a$ and $t$ are defined under Eq. (\ref{eq:H_tau_0})) and the momentum $\mathbf{k}=\left(\begin{array}{cc}
 k_{x}, & k_{y}\end{array}\right)$ measured from the corresponding valley center with $k=|\mathbf{k}|$.
 Note that in this section we use $\mathbf{k}$ to represent momentum
 measured from the corresponding valley center and $\mathbf{p}$ to
@@ -29,13 +29,13 @@ creates (annihilates) a quasiparticle with momentum $\mathbf{k}$
 and spin $s$ in the valley $\tau$, and $c_{s}^{\dagger}(\mathbf{p})$
 ($c_{s}(\mathbf{p})$) creates (annihilates) a quasiparticle with
 momentum $\mathbf{p}$ and spin $s$. Hamiltonian $\mathcal{H}_{\tau}(\mathbf{k})$
-has the spectrum $E_{\tau,u/l}=-\frac{k^{2}}{2m}-\mu\pm\sqrt{E_{soc}^{2}+\left(\mu_{B}B\right)^{2}}$
+has the spectrum $E_{\tau,u/l}=-\frac{k^{2}}{2m}-\mu\pm\sqrt{E_{\text{soc}}^{2}+\left(\mu_{B}B\right)^{2}}$
 with $u$ for the upper ($+$) and $l$ for the lower ($-$) band
 at each valley, and the eigen states: $\varphi_{\tau}(\mathbf{k})=\left[\begin{array}{cc}
 c_{\tau,u}(\mathbf{k}), & c_{\tau,l}(\mathbf{k})\end{array}\right]^{T}$. $c_{\tau,u}$ and $c_{\tau,l}$ correspond to the quasiparticles
 in the band basis which is related to the spin basis through a field-
 and valley-dependent unitary transformation $U_{\tau}(b)$: $\varphi_{\tau}(\mathbf{k})=U_{\tau}(b)\phi_{\tau}(\mathbf{k})$,
-where $b\equiv\frac{\mu_{B}B}{E_{soc}}$ is the dimensionless magnetic
+where $b\equiv\frac{\mu_{B}B}{E_{\text{soc}}}$ is the dimensionless magnetic
 field. Applying a uniform in-plane magnetic field shifts both the
 upper (lower) valence bands at the two valleys
 by the same amount, so that the perfect nesting condition between
@@ -82,7 +82,7 @@ c_{+}(\mathbf{k}), & c_{-}(\mathbf{k}), & c_{-}^{\dagger}(-\mathbf{k}), & -c_{+}
 \mathcal{H}_{MF}(\mathbf{k})=\xi_{\mathbf{k}}\hat{\eta}_{z}-\Delta\hat{\eta}_{x}\label{eq: Mean_Field_Hamiltonian}
 \end{equation}
 where $\hat{\eta}$'s are Pauli matrices acting on Nambu (particle-hole)
-space, $\xi_{\mathbf{k}}=-\frac{k^{2}}{2m}-\mu+\sqrt{E_{soc}^{2}+\left(\mu_{B}B\right)^{2}}$,
+space, $\xi_{\mathbf{k}}=-\frac{k^{2}}{2m}-\mu+\sqrt{E_{\text{soc}}^{2}+\left(\mu_{B}B\right)^{2}}$,
 and the mean field $\Delta=v'(b)\sum_{\mathbf{k}'}\left\langle c_{-}(-\mathbf{k}')c_{+}(\mathbf{k}')\right\rangle $
 describes an inter-valley pairing field, which we choose to be real
 for convenience.
@@ -204,11 +204,11 @@ system in the presence of field $b_{c}$: $T_{c}^{'}(b_{c})=T_{c}^{0}\exp\left[-\
 and the pair-breaking parameter $\delta_{c}$ arises from the valley-flip
 scattering process,
 \begin{equation}
-\delta_{c}\equiv\frac{1}{\tau_{2}}\biggl|_{b_{c}}=\frac{1}{\tau_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}},\ \ b_{c}\equiv\frac{\mu_{B}B_{c}}{E_{soc}}.\label{eq: parameter_pair_breaking}
+\delta_{c}\equiv\frac{1}{\tau_{2}}\biggl|_{b_{c}}=\frac{1}{\tau_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}},\ \ b_{c}\equiv\frac{\mu_{B}B_{c}}{E_{\text{soc}}}.\label{eq: parameter_pair_breaking}
 \end{equation}
 Equation (\ref{eq: pair_breaking_eq}) determines the in-plane critical
-field $B_{c}(T)$ at temperature $T\leq T_{c}^{'}$. For $b_{c}\equiv\frac{\mu_{B}B_{c}}{E_{soc}}\ll1$,
-the pair-breaking parameter takes the simple form $\delta_{c}\approx\frac{1}{\tau_{1}}\left(\mu_{B}B_{c}/E_{soc}\right)^{2}$.
+field $B_{c}(T)$ at temperature $T\leq T_{c}^{'}$. For $b_{c}\equiv\frac{\mu_{B}B_{c}}{E_{\text{soc}}}\ll1$,
+the pair-breaking parameter takes the simple form $\delta_{c}\approx\frac{1}{\tau_{1}}\left(\mu_{B}B_{c}/E_{\text{soc}}\right)^{2}$.
 
 As $T\rightarrow0$, the pair-breaking equation (\ref{eq: pair_breaking_eq})
 can be approximated by the asymptotic expansion of the digamma function,
@@ -216,10 +216,10 @@ which leads to $2\pi T_{c}^{'}\exp\left[\psi(\frac{1}{2})\right]=\frac{1}{\tau_{
 At finite disorder concentration $\frac{1}{\tau_{1}}\neq0$, when
 $b_{c}\ll1$ with $T_{c}^{'}\approx T_{c}^{0}$, the critical field at zero temperature is approximated as
 \begin{equation}
-\mu_{B}B_{c}\biggl|_{T\rightarrow0}\approx E_{soc}\left[2\pi e^{\psi(1/2)}k_{B}T_{c}^{0}\tau_{1}/\hbar\right]^{1/2}.\label{eq: zero_T_Bc}
+\mu_{B}B_{c}\biggl|_{T\rightarrow0}\approx E_{\text{soc}}\left[2\pi e^{\psi(1/2)}k_{B}T_{c}^{0}\tau_{1}/\hbar\right]^{1/2}.\label{eq: zero_T_Bc}
 \end{equation}
 where we have put back the Boltzmann constant $k_{B}$ and
-Planck constant $\hbar$. The large spin-orbit interaction $E_{soc}$
+Planck constant $\hbar$. The large spin-orbit interaction $E_{\text{soc}}$
 ($\sim150-500$ meV) in monolayer TMDs indicates that the in-plane
 critical field $B_{c}$ is significantly enhanced, well beyond the
 Pauli limit.
