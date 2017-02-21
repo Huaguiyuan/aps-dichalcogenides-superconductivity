@@ -23,19 +23,6 @@
 % For Bra-Ket.
 \usepackage{braket}
 
-% Set title styles.
-\titleformat{\section}[runin]
-  {\normalfont\itshape} % chktex 6
-  {\thesection.}{0}{}[:]
-\titlespacing{\section}
-  {0pt}{0.5\baselineskip}{\baselineskip}
-
-\titleformat{\subsection}[runin]
-  {\normalfont\itshape} % chktex 6
-  {\thesection.}{0}{}[:]
-\titlespacing{\subsection}
-  {0pt}{0.5\baselineskip}{\baselineskip}
-
 % Paragraph numbers in Introduction.
 \newcounter{intropara}
 \newcommand\introparanum{\par\refstepcounter{intropara}{(\theintropara)}~}
