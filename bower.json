@@ -19,6 +19,6 @@
     "build"
   ],
   "dependencies": {
-    "references": "evansosenko/references#v0.5.0"
+    "references": "evansosenko/references#v1.0.1"
   }
 }
