@@ -133,17 +133,20 @@ the applying of an in-plane magnetic field causes an energy splitting
 between opposite-spin bands.
 This energy mismatch between opposite
 spins gives rise to a pair-breaking effect in the clean system characterized
-by the pair-breaking equation for temperature $T\leq T_{c}^{0}$ \cite{Maki01061964}:
+by the pair-breaking equation for temperature
+$T \leq T_c^0$
+\cite{Maki01061964},
 \begin{equation}
-\label{eq:conventional_pair_breaking_eq}
-\ln\frac{T_{c}^{0}}{T}=\frac{1}{2}\left[ψ(\frac{1}{2}+\frac{iμ_{B}B_{c}}{2π T})+ψ(\frac{1}{2}-\frac{iμ_{B}B_{c}}{2π T})\right]-ψ(\frac{1}{2}),
+  \label{eq:conventional_pair_breaking_eq}
+  \ln{\frac{T_c^0}{T}}
+  = \frac{1}{2} \left[ψ(\frac{1}{2}+\frac{iμ_{B}B_{c}}{2π T})+ψ(\frac{1}{2}-\frac{iμ_{B}B_{c}}{2π T})\right]-ψ(\frac{1}{2}),
 \end{equation}
 where $T_{c}^{0}$ is the transition temperature at zero field in
 the clean system and $ψ(z)$ is the digamma function.
 This equation determines the critical field $B_{c}$ that destroys the superconducting
 state at temperature $T\leq T_{c}^{0}$ from spin paramagnetism.
 Furthermore, the scattering from non-magnetic impurities does not alter this pair-breaking
-equation (\ref{eq: conventional_pair_breaking_eq}) such that the
+\cref{eq:conventional_pair_breaking_eq} such that the
 critical field remains the same regardless of the presence of scalar
 disorders \cite{Maki01061964}.
 
@@ -213,7 +216,7 @@ After integrating out $\xi$ in the self-energy, the disorder renormalized Green'
 matrix $\hat{\mathcal{G}}=\left[\hat{\mathcal{G}}_{0}^{-1}-\hat{Σ}\right]^{-1}$
 can be parametrized as
 \begin{equation}
-\label{eq: renormalized_G}
+\label{eq:renormalized_g}
 \hat{\mathcal{G}}(\vK,iω_{n})=\left[i\tilde{ω}_{n}-ξ_{\vK}\hat{η}_{z}+\tilde{Δ}\hat{η}_{x}+iF(ω_{n})\hat{η}_{z}\hat{τ}_{x}\right]^{-1}
 \end{equation}
 where the quantities $\tilde{ω}_{n}$, $\tilde{Δ}$, and
@@ -234,23 +237,22 @@ with the expressions
 \frac{1}{τ_{1}}=2U_{0}^{2}n_{\text{imp}}π N_{F},\ \ \frac{1}{τ_{2}}=\frac{1}{τ_{1}}\frac{b^{2}}{1+b^{2}}.
 \end{equation}
 
-
 In the superconducting state, the self-consistency equation for the
 order parameter is given by
 \begin{equation}
 Δ =\frac{1}{4}v'T ∑_{n}∫\frac{d^{2}\vK}{(2π)^{2}}\mathrm{Tr}\left[\hat{η}_{x}\hat{\mathcal{G}}(\vK,iω_{n})\right]
 \end{equation}
 where $\mathrm{Tr}\left[\dots\right]$ is the trace of the argument.
-Explicitly it has the form, from Eq. (\ref{eq: renormalized_G}),
+Explicitly it has the form, from \cref{eq:renormalized_g},
 \begin{equation}
-\label{eq: explicit_self_consistency_eq}
+  \label{eq:explicit_self_consistency_eq}
 Δ =v'π N_{F}T ∑_{n}\frac{\tilde{Δ}}{\sqrt{\tilde{ω}_{n}^{2}+\tilde{Δ}^{2}}}.
 \end{equation}
-Linearizing the self-consistency equation (\ref{eq: explicit_self_consistency_eq})
+Linearizing the self-consistency \cref{eq:explicit_self_consistency_eq}
 near the critical field $B_{c}$, we obtain the pair-breaking equation
 due to the interplay between the in-plane field and the scalar disorder,
 \begin{equation}
-\label{eq: pair_breaking_eq}
+\label{eq:pair_breaking_eq}
 \ln\frac{T_{c}^{'}(b_{c})}{T}=ψ\left(\frac{1}{2}+\frac{δ_{c}}{2π T}\right)-ψ\left(\frac{1}{2}\right)
 \end{equation}
 where $T_{c}^{'}(b_{c})$ is the transition temperature in the clean
@@ -260,12 +262,12 @@ scattering process,
 \begin{equation}
 δ_{c}\equiv\frac{1}{τ_{2}}\biggl|_{b_{c}}=\frac{1}{τ_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}},\ \ b_{c}\equiv\frac{μ_{B}B_{c}}{E_{\text{soc}}}.
 \end{equation}
-Equation (\ref{eq: pair_breaking_eq}) determines the in-plane critical
+\Cref{eq:pair_breaking_eq} determines the in-plane critical
 field $B_{c}(T)$ at temperature $T\leq T_{c}^{'}$.
 For $b_{c}\equiv\frac{μ_{B}B_{c}}{E_{\text{soc}}}\ll1$,
 the pair-breaking parameter takes the simple form $δ_{c}\approx\frac{1}{τ_{1}}\left(μ_{B}B_{c}/E_{\text{soc}}\right)^{2}$.
 
-As $T\rightarrow0$, the pair-breaking equation (\ref{eq: pair_breaking_eq})
+As $T\rightarrow0$, the pair-breaking \cref{eq:pair_breaking_eq}
 can be approximated by the asymptotic expansion of the digamma function,
 which leads to $2π T_{c}^{'}\exp\left[ψ(\frac{1}{2})\right]=\frac{1}{τ_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}}.$
 At finite disorder concentration $\frac{1}{τ_{1}}\neq0$, when
