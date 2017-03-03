@@ -131,52 +131,54 @@ for convenience.
 In a conventional 2D superconductor with spin-degenerate Fermi surface,
 the applying of an in-plane magnetic field causes an energy splitting
 between opposite-spin bands.
-This energy mismatch between opposite
-spins gives rise to a pair-breaking effect in the clean system characterized
-by the pair-breaking equation for temperature
-$T \leq T_c^0$
+This energy mismatch between opposite spins gives rise
+to a pair-breaking effect in the clean system characterized
+by the pair-breaking equation for temperature $T ≤ T_c^0$
 \cite{Maki01061964},
-\begin{equation}
+\begin{multline}
   \label{eq:conventional_pair_breaking_eq}
-  \ln{\frac{T_c^0}{T}}
-  = \frac{1}{2} \left[ψ(\frac{1}{2}+\frac{iμ_{B}B_{c}}{2π T})+ψ(\frac{1}{2}-\frac{iμ_{B}B_{c}}{2π T})\right]-ψ(\frac{1}{2}),
-\end{equation}
-where $T_{c}^{0}$ is the transition temperature at zero field in
-the clean system and $ψ(z)$ is the digamma function.
-This equation determines the critical field $B_{c}$ that destroys the superconducting
-state at temperature $T\leq T_{c}^{0}$ from spin paramagnetism.
-Furthermore, the scattering from non-magnetic impurities does not alter this pair-breaking
+  \ln{\frac{T_c^0}{T}} +  ψ \of{\frac{1}{2}} \\
+  = \frac{1}{2} \left[ ψ \of{\frac{1}{2} + \frac{i μ_B B_c}{2 π T}}
+  + ψ \of{\frac{1}{2} - \frac{i μ_B B_c}{2 π T}} \right],
+\end{multline}
+where $T_c^0$ is the transition temperature at zero field in
+the clean system and $ψ \of{z}$ is the digamma function.
+This equation determines the critical field $B_c$
+that destroys the superconducting state at temperature $T ≤ T_c^0$
+from spin paramagnetism.
+Furthermore, the scattering from non-magnetic impurities
+does not alter this pair-breaking
 \cref{eq:conventional_pair_breaking_eq} such that the
 critical field remains the same regardless of the presence of scalar
-disorders \cite{Maki01061964}.
+disorders
+\cite{Maki01061964}.
 
 Unlike the conventional 2D superconductors, the two single-spin Fermi
 pockets at different valleys in our system remains to be perfectly
 nested without energy mismatch caused by spin paramagnetism, except
 that the spins at the two pockets are no longer opposite with equal-spin
 components induced by the field.
-These two differences give rise to new features in the spin-valley locking system on the effects of in-plane
-magnetic fields.
+These two differences give rise to new features
+in the spin-valley locking system on the effects of in-plane magnetic fields.
 First, in the clean limit, the presence of in-plane
 magnetic fields does not lead to a pair-breaking effect for the lack
 of energy mismatch but mildly suppresses the transition temperature
 through the weakening of the pairing strength.
 The suppressed transition
-temperature $T_{c}^{'}$ is related to zero-field transition temperature
-$T_{c}^{0}$ as $T_{c}^{'}=T_{c}^{0}\exp\left[-\frac{b^{2}}{v_{0}N_{F}}\right]$
-in the mean-field theory, where $N_{F}$ is the density of states
-at the Fermi level.
+temperature $T_c'$ is related to zero-field transition temperature $T_c^0$ as
+$T_c' = T_c^0 \exp{\left( - b^2 / v_0 N_F \right)}$
+in the mean-field theory,
+where $N_F$ is the density of states at the Fermi level.
 Second, the superconducting state is no longer
 immune to the scalar disorder, since non-magnetic disorder potential
 can cause inter-valley scattering due to the field-induced parallel-spin
 components on the two pockets.
-This interplay between the in-plane
-magnetic field and the scalar disorder leads to a pair-breaking effect.
+This interplay between the in-plane magnetic field
+and the scalar disorder leads to a pair-breaking effect.
 
 In the presence of dilute randomly-distributed non-magnetic impurities
 the Hamiltonian for short-range impurity potential is given by
 \begin{equation}
-\label{eq: impurity_H_real}
 \mathcal{H}_{\text{imp}}=∑_{j}∫ d^{2}\vc{r}U_{0}δ(\vc{r}-\vc{R}_{j})ρ(\vc{r})
 \end{equation}
 where $\vc{R}_{j}$ is the position of the $j$th impurity and
@@ -186,12 +188,10 @@ and projecting onto the upper valence bands, $\mathcal{H}_{\text{imp}}$
 can be written, using the Nambu-valley basis $Ψ_{\vK}$,
 as
 \begin{equation}
-\label{eq: impurity_H_momentum}
 \mathcal{H}_{\text{imp}}=∑_{\vK_{1},\vK_{2}}∑_{j}e^{i(\vK_{1}-\vK_{2})\cdot\vc{R}_{j}}Ψ_{\vK_{1}}^† \hat{U}Ψ_{\vK_{2}}
 \end{equation}
 with the disorder scattering vertex $\hat{U}$ taking the form
 \begin{equation}
-\label{eq: disorder_scattering_vertex}
 \hat{U}=U_{0}\hat{η}_{z}+U_{0}\frac{b}{\sqrt{1+b^{2}}}\hat{τ}_{x}
 \end{equation}
 where $\hat{τ}$'s are Pauli matrices operating in valley space.
@@ -216,7 +216,7 @@ After integrating out $\xi$ in the self-energy, the disorder renormalized Green'
 matrix $\hat{\mathcal{G}}=\left[\hat{\mathcal{G}}_{0}^{-1}-\hat{Σ}\right]^{-1}$
 can be parametrized as
 \begin{equation}
-\label{eq:renormalized_g}
+  \label{eq:renormalized_g}
 \hat{\mathcal{G}}(\vK,iω_{n})=\left[i\tilde{ω}_{n}-ξ_{\vK}\hat{η}_{z}+\tilde{Δ}\hat{η}_{x}+iF(ω_{n})\hat{η}_{z}\hat{τ}_{x}\right]^{-1}
 \end{equation}
 where the quantities $\tilde{ω}_{n}$, $\tilde{Δ}$, and
@@ -252,7 +252,7 @@ Linearizing the self-consistency \cref{eq:explicit_self_consistency_eq}
 near the critical field $B_{c}$, we obtain the pair-breaking equation
 due to the interplay between the in-plane field and the scalar disorder,
 \begin{equation}
-\label{eq:pair_breaking_eq}
+  \label{eq:pair_breaking_eq}
 \ln\frac{T_{c}^{'}(b_{c})}{T}=ψ\left(\frac{1}{2}+\frac{δ_{c}}{2π T}\right)-ψ\left(\frac{1}{2}\right)
 \end{equation}
 where $T_{c}^{'}(b_{c})$ is the transition temperature in the clean
@@ -263,7 +263,7 @@ scattering process,
 δ_{c}\equiv\frac{1}{τ_{2}}\biggl|_{b_{c}}=\frac{1}{τ_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}},\ \ b_{c}\equiv\frac{μ_{B}B_{c}}{E_{\text{soc}}}.
 \end{equation}
 \Cref{eq:pair_breaking_eq} determines the in-plane critical
-field $B_{c}(T)$ at temperature $T\leq T_{c}^{'}$.
+field $B_{c}(T)$ at temperature $T ≤ T_{c}^{'}$.
 For $b_{c}\equiv\frac{μ_{B}B_{c}}{E_{\text{soc}}}\ll1$,
 the pair-breaking parameter takes the simple form $δ_{c}\approx\frac{1}{τ_{1}}\left(μ_{B}B_{c}/E_{\text{soc}}\right)^{2}$.
 
