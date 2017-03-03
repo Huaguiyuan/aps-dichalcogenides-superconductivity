@@ -93,7 +93,7 @@ bands, the pairing Hamiltonian has the form
   \mathcal{H}_p
   = - v' \of{b} ∑_{\vK, \vK'}
     c_+^† \ofK c_-^† \ofMK
-    c_- \of{-\vK'} c_+ \of{\vK'}
+    c_- \of{-\vK'} c_+ \of{\vK'},
 \end{equation}
 where we have ignored the upper-band subscript $u$ in the operators
 $c_{τ, u}^†$ and $c_{τ, u}$.
@@ -111,14 +111,20 @@ As a result, the inter-valley pairing contains equal-spin pairing component in
 the presence of in-plane field.
 
 We write the mean-field Hamiltonian, using the Nambu-valley basis
-$\Psi_{\vK}=\left[\begin{array}{cccc}
-c_{+}(\vK), & c_{-}(\vK), & c_{-}^† (-\vK), & -c_{+}^† (-\vK)\end{array}\right]^{T}$, as
 \begin{equation}
-\mathcal{H}_{MF}(\vK)=\xi_{\vK}\hat{\eta}_{z}-\Delta\hat{\eta}_{x}\label{eq: Mean_Field_Hamiltonian}
+  Ψ_{\vK}
+  = \left( c_+ \ofK, c_- \ofK, c_-^† \of{-\vK}, - c_+^† \of{-\vK} \right)^T
 \end{equation}
-where $\hat{\eta}$'s are Pauli matrices acting on Nambu (particle-hole)
-space, $\xi_{\vK}=-\frac{k^{2}}{2m}-μ+\sqrt{E_{\text{soc}}^{2}+\left(μ_{B}B\right)^{2}}$,
-and the mean field $\Delta=v'(b)\sum_{\vK'}\left\langle c_{-}(-\vK')c_{+}(\vK')\right\rangle $
+as
+\begin{equation}
+  \mathcal{H}_{\text{MF}} \ofK
+  = ξ_{\vK} \hat{η}_z - Δ \hat{η}_x
+\end{equation}
+where $\hat{η}_i$ are Pauli matrices acting on Nambu (particle-hole) space,
+$ξ_{\vK}
+= - \frac{k^2}{2m} - μ + \sqrt{E_{\text{soc}}^2 + \left( μ_{B} B \right)^2}$,
+and the mean field
+$Δ = v' \of{b} ∑_{\vK'} \left⟨ c_- \of{-\vK'} c_+ \of{\vK'} \right⟩$
 describes an inter-valley pairing field, which we choose to be real
 for convenience.
 
@@ -129,7 +135,7 @@ This energy mismatch between opposite
 spins gives rise to a pair-breaking effect in the clean system characterized
 by the pair-breaking equation for temperature $T\leq T_{c}^{0}$ \cite{Maki01061964}:
 \begin{equation}
-\ln\frac{T_{c}^{0}}{T}=\frac{1}{2}\left[\psi(\frac{1}{2}+\frac{iμ_{B}B_{c}}{2\pi T})+\psi(\frac{1}{2}-\frac{iμ_{B}B_{c}}{2\pi T})\right]-\psi(\frac{1}{2}),\label{eq: conventional_pair_breaking_eq}
+\ln\frac{T_{c}^{0}}{T}=\frac{1}{2}\left[\psi(\frac{1}{2}+\frac{iμ_{B}B_{c}}{2π T})+\psi(\frac{1}{2}-\frac{iμ_{B}B_{c}}{2π T})\right]-\psi(\frac{1}{2}),\label{eq: conventional_pair_breaking_eq}
 \end{equation}
 where $T_{c}^{0}$ is the transition temperature at zero field in
 the clean system and $\psi(z)$ is the digamma function.
@@ -166,20 +172,20 @@ magnetic field and the scalar disorder leads to a pair-breaking effect.
 In the presence of dilute randomly-distributed non-magnetic impurities
 the Hamiltonian for short-range impurity potential is given by
 \begin{equation}
-\mathcal{H}_{imp}=\sum_{j}\int d^{2}\vc{r}U_{0}\delta(\vc{r}-\vc{R}_{j})ρ(\vc{r})\label{eq: impurity_H_real}
+\mathcal{H}_{\text{imp}}=∑_{j}\int d^{2}\vc{r}U_{0}\delta(\vc{r}-\vc{R}_{j})ρ(\vc{r})\label{eq: impurity_H_real}
 \end{equation}
 where $\vc{R}_{j}$ is the position of the $j$th impurity and
 $U_{0}$ is the disorder strength.
 Transforming to momentum space
-and projecting onto the upper valence bands, $\mathcal{H}_{imp}$
-can be written, using the Nambu-valley basis $\Psi_{\vK}$,
+and projecting onto the upper valence bands, $\mathcal{H}_{\text{imp}}$
+can be written, using the Nambu-valley basis $Ψ_{\vK}$,
 as
 \begin{equation}
-\mathcal{H}_{imp}=\sum_{\vK_{1},\vK_{2}}\sum_{j}e^{i(\vK_{1}-\vK_{2})\cdot\vc{R}_{j}}\Psi_{\vK_{1}}^† \hat{U}\Psi_{\vK_{2}}\label{eq: impurity_H_momentum}
+\mathcal{H}_{\text{imp}}=∑_{\vK_{1},\vK_{2}}∑_{j}e^{i(\vK_{1}-\vK_{2})\cdot\vc{R}_{j}}Ψ_{\vK_{1}}^† \hat{U}Ψ_{\vK_{2}}\label{eq: impurity_H_momentum}
 \end{equation}
 with the disorder scattering vertex $\hat{U}$ taking the form
 \begin{equation}
-\hat{U}=U_{0}\hat{\eta}_{z}+U_{0}\frac{b}{\sqrt{1+b^{2}}}\hat{τ}_{x}\label{eq: disorder_scattering_vertex}
+\hat{U}=U_{0}\hat{η}_{z}+U_{0}\frac{b}{\sqrt{1+b^{2}}}\hat{τ}_{x}\label{eq: disorder_scattering_vertex}
 \end{equation}
 where $\hat{τ}$'s are Pauli matrices operating in valley space.
 The first term in $\hat{U}$ corresponds to intra valley scattering
@@ -194,51 +200,51 @@ The self energy due to impurity scattering after averaging over randomly-distrib
 impurity configurations, in the first-order Born approximation, is
 obtained as \cite{AbrikosovGorkov1961,maki1969superconductivity}
 \begin{equation}
-\hat{\Sigma}(\vK,i\omega_{n})=n_{imp}\int\frac{d^{2}\vK'}{(2\pi)^{2}}\hat{U}\hat{\mathcal{G}}_{0}(\vK',i\omega_{n})\hat{U}\label{eq: self_energy}
+\hat{\Sigma}(\vK,i\omega_{n})=n_{\text{imp}}\int\frac{d^{2}\vK'}{(2π)^{2}}\hat{U}\hat{\mathcal{G}}_{0}(\vK',i\omega_{n})\hat{U}\label{eq: self_energy}
 \end{equation}
-where $n_{imp}$ is the impurity concentration, and $\hat{\mathcal{G}}_{0}$
-is the Green's function matrix of the clean system $\hat{\mathcal{G}}_{0}(\vK',i\omega_{n})=\left[i\omega_{n}-\xi_{\vK'}\hat{\eta}_{z}+\Delta\hat{\eta}_{x}\right]^{-1}$
-with the Matsubara frequencies $\omega_{n}=(2n+1)\pi T$.
+where $n_{\text{imp}}$ is the impurity concentration, and $\hat{\mathcal{G}}_{0}$
+is the Green's function matrix of the clean system $\hat{\mathcal{G}}_{0}(\vK',i\omega_{n})=\left[i\omega_{n}-ξ_{\vK'}\hat{η}_{z}+Δ \hat{η}_{x}\right]^{-1}$
+with the Matsubara frequencies $\omega_{n}=(2n+1)π T$.
 After integrating out $\xi$ in the self-energy, the disorder renormalized Green's function
 matrix $\hat{\mathcal{G}}=\left[\hat{\mathcal{G}}_{0}^{-1}-\hat{\Sigma}\right]^{-1}$
 can be parametrized as
 \begin{equation}
-\hat{\mathcal{G}}(\vK,i\omega_{n})=\left[i\tilde{\omega}_{n}-\xi_{\vK}\hat{\eta}_{z}+\tilde{\Delta}\hat{\eta}_{x}+iF(\omega_{n})\hat{\eta}_{z}\hat{τ}_{x}\right]^{-1}\label{eq: renormalized_G}
+\hat{\mathcal{G}}(\vK,i\omega_{n})=\left[i\tilde{ω}_{n}-ξ_{\vK}\hat{η}_{z}+\tilde{Δ}\hat{η}_{x}+iF(\omega_{n})\hat{η}_{z}\hat{τ}_{x}\right]^{-1}\label{eq: renormalized_G}
 \end{equation}
-where the quantities $\tilde{\omega}_{n}$, $\tilde{\Delta}$, and
+where the quantities $\tilde{ω}_{n}$, $\tilde{Δ}$, and
 $F(\omega_{n})$ have the definitions
 \begin{equation}
-\tilde{\omega}_{n}\equiv\omega_{n}+\left(\frac{1}{2τ_{1}}+\frac{1}{2τ_{2}}\right)\frac{\omega_{n}}{\sqrt{\omega_{n}^{2}+\Delta^{2}}},\label{eq: renormalized_omega}
+\tilde{ω}_{n}\equiv\omega_{n}+\left(\frac{1}{2τ_{1}}+\frac{1}{2τ_{2}}\right)\frac{\omega_{n}}{\sqrt{\omega_{n}^{2}+Δ^{2}}},\label{eq: renormalized_omega}
 \end{equation}
 \begin{equation}
-\tilde{\Delta}\equiv\Delta+\left(\frac{1}{2τ_{1}}-\frac{1}{2τ_{2}}\right)\frac{\Delta}{\sqrt{\omega_{n}^{2}+\Delta^{2}}},\label{eq: renormalized_Delta}
+\tilde{Δ}\equiv Δ +\left(\frac{1}{2τ_{1}}-\frac{1}{2τ_{2}}\right)\frac{Δ}{\sqrt{\omega_{n}^{2}+Δ^{2}}},\label{eq: renormalized_Delta}
 \end{equation}
 \begin{equation}
-F(\omega_{n})\equiv\frac{1}{2τ_{1}}\frac{\omega_{n}}{\sqrt{\omega_{n}^{2}+\Delta^{2}}}\frac{2b}{\sqrt{1+b^{2}}}.\label{eq: function_F}
+F(\omega_{n})\equiv\frac{1}{2τ_{1}}\frac{\omega_{n}}{\sqrt{\omega_{n}^{2}+Δ^{2}}}\frac{2b}{\sqrt{1+b^{2}}}.
 \end{equation}
 Here $1/τ_{1}$ and $1/τ_{2}$ are the collision rates corresponding
 to the disorder-induced intra- and inter-valley scattering, respectively,
 with the expressions
 \begin{equation}
-\frac{1}{τ_{1}}=2U_{0}^{2}n_{imp}\pi N_{F},\ \ \frac{1}{τ_{2}}=\frac{1}{τ_{1}}\frac{b^{2}}{1+b^{2}}.\label{eq: collision_rates}
+\frac{1}{τ_{1}}=2U_{0}^{2}n_{\text{imp}}π N_{F},\ \ \frac{1}{τ_{2}}=\frac{1}{τ_{1}}\frac{b^{2}}{1+b^{2}}.\label{eq: collision_rates}
 \end{equation}
 
 
 In the superconducting state, the self-consistency equation for the
 order parameter is given by
 \begin{equation}
-\Delta=\frac{1}{4}v'T\sum_{n}\int\frac{d^{2}\vK}{(2\pi)^{2}}\mathrm{Tr}\left[\hat{\eta}_{x}\hat{\mathcal{G}}(\vK,i\omega_{n})\right]\label{eq: self_consistency_eq}
+Δ =\frac{1}{4}v'T ∑_{n}\int\frac{d^{2}\vK}{(2π)^{2}}\mathrm{Tr}\left[\hat{η}_{x}\hat{\mathcal{G}}(\vK,i\omega_{n})\right]\label{eq: self_consistency_eq}
 \end{equation}
 where $\mathrm{Tr}\left[\dots\right]$ is the trace of the argument.
 Explicitly it has the form, from Eq. (\ref{eq: renormalized_G}),
 \begin{equation}
-\Delta=v'\pi N_{F}T\sum_{n}\frac{\tilde{\Delta}}{\sqrt{\tilde{\omega}_{n}^{2}+\tilde{\Delta}^{2}}}.\label{eq: explicit_self_consistency_eq}
+Δ =v'π N_{F}T ∑_{n}\frac{\tilde{Δ}}{\sqrt{\tilde{ω}_{n}^{2}+\tilde{Δ}^{2}}}.\label{eq: explicit_self_consistency_eq}
 \end{equation}
 Linearizing the self-consistency equation (\ref{eq: explicit_self_consistency_eq})
 near the critical field $B_{c}$, we obtain the pair-breaking equation
 due to the interplay between the in-plane field and the scalar disorder,
 \begin{equation}
-\ln\frac{T_{c}^{'}(b_{c})}{T}=\psi\left(\frac{1}{2}+\frac{\delta_{c}}{2\pi T}\right)-\psi\left(\frac{1}{2}\right)\label{eq: pair_breaking_eq}
+\ln\frac{T_{c}^{'}(b_{c})}{T}=\psi\left(\frac{1}{2}+\frac{\delta_{c}}{2π T}\right)-\psi\left(\frac{1}{2}\right)\label{eq: pair_breaking_eq}
 \end{equation}
 where $T_{c}^{'}(b_{c})$ is the transition temperature in the clean
 system in the presence of field $b_{c}$: $T_{c}^{'}(b_{c})=T_{c}^{0}\exp\left[-\frac{b_{c}^{2}}{v_{0}N_{F}}\right]$,
@@ -254,11 +260,11 @@ the pair-breaking parameter takes the simple form $\delta_{c}\approx\frac{1}{τ_
 
 As $T\rightarrow0$, the pair-breaking equation (\ref{eq: pair_breaking_eq})
 can be approximated by the asymptotic expansion of the digamma function,
-which leads to $2\pi T_{c}^{'}\exp\left[\psi(\frac{1}{2})\right]=\frac{1}{τ_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}}.$
+which leads to $2π T_{c}^{'}\exp\left[\psi(\frac{1}{2})\right]=\frac{1}{τ_{1}}\frac{b_{c}^{2}}{1+b_{c}^{2}}.$
 At finite disorder concentration $\frac{1}{τ_{1}}\neq0$, when
 $b_{c}\ll1$ with $T_{c}^{'}\approx T_{c}^{0}$, the critical field at zero temperature is approximated as
 \begin{equation}
-μ_{B}B_{c}\biggl|_{T\rightarrow0}\approx E_{\text{soc}}\left[2\pi e^{\psi(1/2)}k_{B}T_{c}^{0}τ_{1}/\hbar\right]^{1/2}.\label{eq: zero_T_Bc}
+μ_{B}B_{c}\biggl|_{T\rightarrow0}\approx E_{\text{soc}}\left[2π e^{\psi(1/2)}k_{B}T_{c}^{0}τ_{1}/\hbar\right]^{1/2}.\label{eq: zero_T_Bc}
 \end{equation}
 where we have put back the Boltzmann constant $k_{B}$ and
 Planck constant $\hbar$.
