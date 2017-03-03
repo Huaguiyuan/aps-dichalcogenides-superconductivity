@@ -37,13 +37,13 @@ measured from the corresponding valley center and $\vc{p}$ to
 represent momentum measured from the Brillouin zone (BZ) center.
 We use the notation that $c_{τ \s}^† \ofK$ ($c_{τ \s} \ofK$)
 creates (annihilates) a quasiparticle with momentum $\vK$
-and spin $s$ in the valley $τ$, and $c_s^† \left( \vc{p} \right)$
-($c_{s}(\vc{p})$) creates (annihilates) a quasiparticle with
-momentum $\vc{p}$ and spin $s$.
+and spin $\s$ in the valley $τ$, and $c_s^† \of{\vc{p}}$
+($c_{\s} \of{\vc{p}}$) creates (annihilates) a quasiparticle with
+momentum $\vc{p}$ and spin $\s$.
 
 The Hamiltonian $\mathcal{H}_τ \ofK$ has the spectrum
 \begin{equation}
-  E_{τ, u / l}
+  E_{τ, u / l} \of{k}
   = - \frac{k^2}{2 m} -μ ± \sqrt{E_{\text{soc}}^2 + {\left( μ_B B \right)}^2},
 \end{equation}
 with $u$ for the upper ($+$) and $l$ for the lower ($-$) band at each valley,
@@ -51,8 +51,8 @@ and the eigenstates
 $φ_τ \ofK = {\left( c_{τ u} \ofK, c_{τ l} \ofK \right)}^T$,
 where $c_{τ u}$ and $c_{τ l}$ correspond to the quasiparticles
 in the band basis which is related to the spin basis through a field
-and valley-dependent unitary transformation $U_τ \left( b \right)$:
-$φ_τ \ofK = U_τ \left( b \right) ϕ_{τ} \ofK$,
+and valley-dependent unitary transformation $U_τ \of{b}$:
+$φ_τ \ofK = U_τ \of{b} ϕ_τ \ofK$,
 where $b = μ_B B / {E_{\text{soc}}}$
 is the dimensionless magnetic field.
 Applying a uniform in-plane magnetic field shifts both the
@@ -74,35 +74,45 @@ The change of quasiparticle spin orientation induced by the in-plane field
 modifies the internal structure of the Cooper pair
 and affects the pairing strength as shown below.
 
-To evaluate the effect of the magnetic field on the superconductivity we follow the procedure used in section \ref{s:superconductivity}.
+To evaluate the effect of the magnetic field on the superconductivity
+we follow the procedure used in \cref{s:superconductivity}.
 A local attractive density-density
-interaction with pairing strength $v_{0}$ can be written as: $\mathcal{H}_{int}=-v_{0}\int d^{2}\vc{r}\rho(\vc{r})\rho(\vc{r})$,
-with the quasiparticle density $\rho(\vc{r})=\sum_{s}c_{s}^{\dagger}(\vc{r})c_{s}(\vc{r})$
-where $c_{s}^{\dagger}(\vc{r})$ ($c_{s}(\vc{r})$) is the
-Fourier transform of $c_{s}^{\dagger}(\vc{p})$ ($c_{s}(\vc{p})$).
+interaction with pairing strength $v_0$ can be written as
+\begin{equation}
+  \mathcal{H}_{\text{int}}
+  = - v_0 ∫ ρ \of{\vc{r}} ρ \left( \vc{r}' \right)
+    \: {d^2 \vc{r}} \: d^2 \vc{r}',
+\end{equation}
+with the quasiparticle density
+$ρ \of{\vc{r}} = ∑_{\s} c_{\s}^† \of{\vc{r}} c_{\s} \of{\vc{r}}$
+where $c_{\s}^† \of{\vc{r}}$ ($c_{\s} \of{\vc{r}}$) is the
+Fourier transform of $c_{\s}^† \of{\vc{p}}$ ($c_{\s} \of{\vc{p}}$).
 Transforming to momentum space and projecting onto the upper valence
 bands, the pairing Hamiltonian has the form
 \begin{equation}
-\mathcal{H}_{p}=-v'(b)\sum_{\vK,\vK'}c_{+}^{\dagger}(\vK)c_{-}^{\dagger}(-\vK)c_{-}(-\vK')c_{+}(\vK')\label{eq: pairing_Hamiltonian}
+  \mathcal{H}_p
+  = - v' \of{b} ∑_{\vK, \vK'}
+    c_+^† \ofK c_-^† \ofMK
+    c_- \of{-\vK'} c_+ \of{\vK'}
 \end{equation}
 where we have ignored the upper-band subscript $u$ in the operators
-$c_{τ,u}^{\dagger}$ and $c_{τ,u}$.
-$v'(b)$ is the effective
-pairing strength in the presence of in-plane magnetic field $v'(b)\equiv\frac{1}{1+b^{2}}v_{0}$.
-The Hamiltonian $\mathcal{H}_{p}$ describes an inter-valley pairing
+$c_{τ, u}^†$ and $c_{τ, u}$.
+The effective pairing strength in the presence of in-plane magnetic field is
+$v' \of{b} = v_0 / \left( 1 + b^2 \right)$.
+The Hamiltonian $\mathcal{H}_p$ describes an inter-valley pairing
 with a pairing strength $v'$ suppressed by the in-plane field.
-At zero field, $v'=v_{0}$, $c_{+}^{\dagger}=c_{+\uparrow}^{\dagger}$ and
-$c_{-}^{\dagger}=c_{-\downarrow}^{\dagger}$, the pairing occurs between
-opposite spins.
-At finite fields, $v'<v_{0}$, the quasiparticle at valley
-$+$ ($-$), represented by $c_{+}^{\dagger}$ ($c_{-}^{\dagger}$),
+At zero field, $v' = v_0$,
+$c_+^† = c_{+ ↑}^†$, and $c_-^† = c_{- ↓}^†$
+so the pairing occurs between opposite spins.
+At finite fields, $v' < v_0$, the quasiparticle at valley
+$+$ ($-$), represented by $c_+^†$ ($c_-^†$),
 has its up (down) spin tilted towards the field direction.
 As a result, the inter-valley pairing contains equal-spin pairing component in
 the presence of in-plane field.
 
 We write the mean-field Hamiltonian, using the Nambu-valley basis
 $\Psi_{\vK}=\left[\begin{array}{cccc}
-c_{+}(\vK), & c_{-}(\vK), & c_{-}^{\dagger}(-\vK), & -c_{+}^{\dagger}(-\vK)\end{array}\right]^{T}$, as
+c_{+}(\vK), & c_{-}(\vK), & c_{-}^† (-\vK), & -c_{+}^† (-\vK)\end{array}\right]^{T}$, as
 \begin{equation}
 \mathcal{H}_{MF}(\vK)=\xi_{\vK}\hat{\eta}_{z}-\Delta\hat{\eta}_{x}\label{eq: Mean_Field_Hamiltonian}
 \end{equation}
@@ -156,7 +166,7 @@ magnetic field and the scalar disorder leads to a pair-breaking effect.
 In the presence of dilute randomly-distributed non-magnetic impurities
 the Hamiltonian for short-range impurity potential is given by
 \begin{equation}
-\mathcal{H}_{imp}=\sum_{j}\int d^{2}\vc{r}U_{0}\delta(\vc{r}-\vc{R}_{j})\rho(\vc{r})\label{eq: impurity_H_real}
+\mathcal{H}_{imp}=\sum_{j}\int d^{2}\vc{r}U_{0}\delta(\vc{r}-\vc{R}_{j})ρ(\vc{r})\label{eq: impurity_H_real}
 \end{equation}
 where $\vc{R}_{j}$ is the position of the $j$th impurity and
 $U_{0}$ is the disorder strength.
@@ -165,7 +175,7 @@ and projecting onto the upper valence bands, $\mathcal{H}_{imp}$
 can be written, using the Nambu-valley basis $\Psi_{\vK}$,
 as
 \begin{equation}
-\mathcal{H}_{imp}=\sum_{\vK_{1},\vK_{2}}\sum_{j}e^{i(\vK_{1}-\vK_{2})\cdot\vc{R}_{j}}\Psi_{\vK_{1}}^{\dagger}\hat{U}\Psi_{\vK_{2}}\label{eq: impurity_H_momentum}
+\mathcal{H}_{imp}=\sum_{\vK_{1},\vK_{2}}\sum_{j}e^{i(\vK_{1}-\vK_{2})\cdot\vc{R}_{j}}\Psi_{\vK_{1}}^† \hat{U}\Psi_{\vK_{2}}\label{eq: impurity_H_momentum}
 \end{equation}
 with the disorder scattering vertex $\hat{U}$ taking the form
 \begin{equation}
