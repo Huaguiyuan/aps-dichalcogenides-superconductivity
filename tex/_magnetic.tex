@@ -134,7 +134,7 @@ the application of an in-plane magnetic field induces an energy splitting
 between opposite-spin bands.
 This energy mismatch between opposite spins creates
 a pair-breaking effect in the clean system characterized
-by the pair-breaking equation for temperatures $T ≤ T_c^0$
+by the pair-breaking equation for temperature $T ≤ T_c^0$
 \cite{Maki01061964},
 \begin{multline}
   \label{eq:conventional_pair_breaking_eq}
@@ -219,13 +219,13 @@ in the first-order Born approximation, is obtained as
   \hat{Σ} \of {\vK, i ω_n}
   = \frac{n_{\text{imp}}}{{\left( 2π \right)}^2}
     ∫ \hat{U} \hat{\mathcal{G}}_0 \of{\vK', i ω_n} \hat{U}
-    \: \dif^2 \vK'
+    \: \dif^2 \vK',
 \end{equation}
-where $n_{\text{imp}}$ is the impurity concentration,
+where $n_{\text{imp}}$ is the impurity concentration
 and $\hat{\mathcal{G}}_0$
-is the Green's function matrix of the clean system
+is the Green's function matrix of the clean system,
 $\hat{\mathcal{G}}_0 \of{\vK', i ω_n}
-= {\left( i ω_n - ξ_{\vK'} \hat{η}_z + Δ \hat{η}_x \right )}^{-1}$
+= {\left( i ω_n - ξ_{\vK'} \hat{η}_z + Δ \hat{η}_x \right )}^{-1}$,
 with the Matsubara frequencies
 $ω_n = \left( 2 n + 1 \right) π T$.
 After integrating out $ξ$ in the self-energy,
@@ -236,7 +236,7 @@ can be parametrized as
   \label{eq:renormalized_g}
   \hat{\mathcal{G}} \of{\vK, i ω_n}
   = {\left[ i \tilde{ω}_n - ξ_{\vK} \hat{η}_z
-    + \tilde{Δ} \hat{η}_x + i F \of{ω_n} \hat{η}_z \hat{τ}_x \right]}^{-1}
+    + \tilde{Δ} \hat{η}_x + i F \of{ω_n} \hat{η}_z \hat{τ}_x \right]}^{-1}, \!
 \end{equation}
 where the quantities
 $\tilde{ω}_n$, $\tilde{Δ}$, and $F \of{ω_n}$ have the definitions
@@ -254,7 +254,7 @@ $\tilde{ω}_n$, $\tilde{Δ}$, and $F \of{ω_n}$ have the definitions
   F \of{ω_n}
   = \frac{1}{2 τ_1} \frac{ω_n}{\sqrt{ω_n^2 + Δ^2}} \frac{2b}{\sqrt{1 + b^2}}.
 \end{equation}
-Here $1 / τ_1$ and $1 / τ_2$ are the collision rates corresponding
+Here, $1 / τ_1$ and $1 / τ_2$ are the collision rates corresponding
 to the disorder-induced intravalley and intervalley scattering, respectively,
 with the expressions
 \begin{equation}
@@ -270,7 +270,7 @@ order parameter is given by
     ∑_n ∫ \Tr{\left[ \hat{η}_x \hat{\mathcal{G}} \of{\vK, i ω_n} \right]}
     \: \dif^2 \vK.
 \end{equation}
-Explicitly it has the form, from \cref{eq:renormalized_g},
+Explicitly, from \cref{eq:renormalized_g}, it has the form
 \begin{equation}
   \label{eq:explicit_self_consistency_eq}
   Δ = v' π N_F T ∑_n \frac{\tilde{Δ}}{\sqrt{\tilde{ω}_n^2 + \tilde{Δ}^2}}.
@@ -283,38 +283,36 @@ due to the interplay between the in-plane field and the scalar disorder,
   \ln{\frac{T_c' \of{b_c}}{T}}
   = ψ \of{\frac{1}{2} + \frac{δ_c}{2 π T}} - ψ \of{\frac{1}{2}},
 \end{equation}
-where $T_c' \of{b_c}$ is the transition temperature in the clean
-system in the presence of field $b_c$:
-$T_c' \of{b_c} = T_c^0 \exp{\left( - b_c^2 / v_0 N_F \right)}$,
-and the pair-breaking parameter $δ_c$ arises from the valley-flip
-scattering process,
+where $T_c' \of{b_c} = T_c^0 \exp{\left( - b_c^2 / v_0 N_F \right)}$
+is the transition temperature in the clean system in the presence of the field
+$b_c = μ_B B_c / E_{\text{soc}}$,
+and the pair-breaking parameter
 \begin{equation}
   δ_c = \frac{1}{τ_2} \biggl{\rvert}_{b_c}
-      = \frac{1}{τ_1} \frac{b_c^2}{1 + b_c^2}, \:
-  b_c = \frac{μ_B B_c}{E_{\text{soc}}}.
+      = \frac{1}{τ_1} \frac{b_c^2}{1 + b_c^2}
 \end{equation}
+arises from the valley-flip scattering process.
 \Cref{eq:pair_breaking_eq} determines the in-plane critical
 field $B_c \of{T}$ at temperature $T ≤ T_c'$.
-For $b_c = \frac{μ_B B_c}{E_{\text{soc}}} ≪ 1$,
-the pair-breaking parameter takes the simple form
+For $b_c ≪ 1$, the pair-breaking parameter takes the simple form
 $δ_c ≈ τ_1^{-1} {\left( μ_B B_c / E_{\text{soc}} \right)}^2$.
 
 As $T → 0$, the pair-breaking \cref{eq:pair_breaking_eq}
 can be approximated by the asymptotic expansion of the digamma function,
 which leads to
 $2 π T_c' \exp{\left[ ψ \of{1 / 2} \right]}
-= \frac{1}{τ_1} \frac{b_c^2}{1 + b_c^2}$.
-At finite disorder concentration $τ_1^{-1} ≠ 0$, when
-$b_c ≪ 1$ with $T_c' ≈ T_c^0$,
+= \left( b_c^2 / τ_1 \right) / \left( 1 + b_c^2 \right)$.
+At finite disorder concentration, $τ_1^{-1} ≠ 0$,
+when $b_c ≪ 1$ with $T_c' ≈ T_c^0$,
 the critical field at zero temperature is approximated as
 \begin{equation}
   μ_B B_c \biggl{\rvert}_{T → 0}
-  ≈ E_{\text{soc}} {\left[ 2π e^{ψ \of{1/2}} k_B T_c^0 τ_1 / ℏ \right]}^{1/2}.
+  ≈ E_{\text{soc}} {\left[ 2π e^{ψ \of{1/2}} k_B T_c^0 τ_1 / ℏ \right]}^{1/2},
 \end{equation}
 where we have put back the Boltzmann constant $k_{B}$ and
-Planck constant $ℏ$.
+the reduced Planck constant $ℏ$.
 The large spin-orbit interaction $E_{\text{soc}}$
-($∼$ \SIrange[range-phrase=--, range-units=single]{150}{500}{\milli \electronvolt})
+($∼$ \SIrange[range-phrase=--, range-units=single]{150}{500}{{\milli}\electronvolt})
 in monolayer TMDs indicates that the in-plane
 critical field $B_c$ is significantly enhanced, well beyond the
 Pauli limit.
