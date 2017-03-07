@@ -8,6 +8,10 @@ s/\\vc{ϵ}/\\boldsymbol{\\epsilon}/g
 s/·/{\\cdot}/g
 s/†/{\\dagger}/g
 s/↓/{\\downarrow}/g
+s/∫/{\\int}/g
+s/≤/{\\leq}/g
+s/≈/{\\approx}/g
+s/≪/{\ll}/g
 s/ϵ/{\\epsilon}/g
 s/ℏ/{\\hbar}/g
 s/∓/{\\mp}/g
@@ -26,6 +30,7 @@ s/⨯/{\\times}/g
 s/↑/{\\uparrow}/g
 s/α/{\\alpha}/g
 s/β/{\\beta}/g
+s/η/{\\eta}/g
 s/γ/{\\gamma}/g
 s/Δ/{\\Delta}/g
 s/δ/{\\delta}/g
@@ -36,10 +41,14 @@ s/μ/{\\mu}/g
 s/ν/{\\nu}/g
 s/ξ/{\\xi}/g
 s/π/{\\pi}/g
+s/Σ/{\\Sigma}/g
 s/σ/{\\sigma}/g
 s/τ/{\\tau}/g
 s/ϕ/{\\phi}/g
+s/φ/{\\varphi}/g
+s/Ψ/{\\Psi}/g
 s/ψ/{\\psi}/g
 s/χ/{\\chi}/g
+s/ρ/{\\rho}/g
 s/Ω/{\\Omega}/g
 s/ω/{\\omega}/g
