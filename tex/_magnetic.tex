@@ -23,13 +23,13 @@ which is acting on the valley-spin basis
 $ϕ_τ \ofK = {\left( c_{τ ↑} \ofK, c_{τ ↓} \ofK \right)}^T$,
 where $μ$ is the chemical potential, $τ = ±$ is the valley
 index, $\hat{s}_i$ are Pauli matrices operating in spin space,
-$μ_B$ is the Bohr magneton, and the dispersion relations of the upper and
-lower valence bands have been approximated by a quadratic form with
-an effective mass
-$m = E_g / \left( 2 a^2 t^2 \right)$
-($E_g$ is the large energy gap between the conduction and valence bands,
+and $μ_B$ is the Bohr magneton.
+The dispersion relations of the upper and lower valence bands
+have been approximated by a quadratic form with an effective mass
+$m = E_g / \left( 2 a^2 t^2 \right)$, where
+$E_g$ is the large energy gap between the conduction and valence bands,
 $E_g ≫ E_{\text{soc}}$,
-$a$ and $t$ are defined under \cref{eq:hamiltonian}),
+$a$ and $t$ are defined under \cref{eq:hamiltonian},
 and the momentum $\vK = \left( k_x, k_y \right)$
 is measured from the corresponding valley center with $k = \abs{\vK}$.
 Note that in this section we use $\vK$ to represent momentum
@@ -56,20 +56,21 @@ $φ_τ \ofK = U_τ \of{b} ϕ_τ \ofK$,
 where $b = μ_B B / {E_{\text{soc}}}$
 is the dimensionless magnetic field.
 Applying a uniform in-plane magnetic field shifts both the
-upper (lower) valence bands at the two valleys
-by the same amount, so that the perfect nesting condition between
+upper and lower valence bands at the two valleys
+by the same amount so that the perfect nesting condition between
 the Fermi pockets at the two valleys remains.
-On the other hand, the quasiparticle spin acquires a finite in-plane component,
+The quasiparticle spin acquires a finite in-plane component,
 i.e., deviating from $± z$ direction.
-Explicitly we have
+Explicitly,
 $\Braket{τ, u | \hat{s}_z | τ, u} = - \Braket{τ, l | \hat{s}_z | τ, l}
 = \left( τ / 2 \right) / \sqrt{1 + b^2}$,
 and
 $\Braket{τ, u | \hat{s}_x | τ, u} = - \Braket{τ, l | \hat{s}_x | τ, l}
-= \left( b / 2 \right) / \sqrt{1 + b^2}$,
-Therefore, the quasiparticle spin tilts towards the field direction
+= \left( b / 2 \right) / \sqrt{1 + b^2}$.
+Therefore, at both valleys,
+the quasiparticle spin tilts towards the field direction
 in the upper valence bands and tilts against the field direction in
-the lower valence bands at both valleys.
+the lower valence bands.
 The change of quasiparticle spin orientation induced by the in-plane field
 modifies the internal structure of the Cooper pair
 and affects the pairing strength as shown below.
@@ -84,7 +85,7 @@ interaction with pairing strength $v_0$ can be written as
     \: \dif^2 \vc{r} \: \dif^2 \vc{r}',
 \end{equation}
 with the quasiparticle density
-$ρ \of{\vc{r}} = ∑_{\s} c_{\s}^† \of{\vc{r}} c_{\s} \of{\vc{r}}$
+$ρ \of{\vc{r}} = ∑_{\s} c_{\s}^† \of{\vc{r}} c_{\s} \of{\vc{r}}$,
 where $c_{\s}^† \of{\vc{r}}$ ($c_{\s} \of{\vc{r}}$) is the
 Fourier transform of $c_{\s}^† \of{\vc{p}}$ ($c_{\s} \of{\vc{p}}$).
 Transforming to momentum space and projecting onto the upper valence
@@ -96,44 +97,44 @@ bands, the pairing Hamiltonian has the form
     c_- \of{-\vK'} c_+ \of{\vK'},
 \end{equation}
 where we have ignored the upper-band subscript $u$ in the operators
-$c_{τ, u}^†$ and $c_{τ, u}$.
+$c_{τ u}^†$ and $c_{τ u}$.
 The effective pairing strength in the presence of in-plane magnetic field is
 $v' \of{b} = v_0 / \left( 1 + b^2 \right)$.
 The Hamiltonian $\mathcal{H}_p$ describes an inter-valley pairing
 with a pairing strength $v'$ suppressed by the in-plane field.
 At zero field, $v' = v_0$,
-$c_+^† = c_{+ ↑}^†$, and $c_-^† = c_{- ↓}^†$
+$c_+^† = c_{+ ↑}^†$, and $c_-^† = c_{- ↓}^†$,
 so the pairing occurs between opposite spins.
-At finite fields, $v' < v_0$, the quasiparticle at valley
+At finite fields, $v' < v_0$ and the quasiparticle at valley
 $+$ ($-$), represented by $c_+^†$ ($c_-^†$),
 has its up (down) spin tilted towards the field direction.
-As a result, the inter-valley pairing contains equal-spin pairing component in
+As a result, the inter-valley pairing contains equal-spin pairing components in
 the presence of in-plane field.
 
 We write the mean-field Hamiltonian, using the Nambu-valley basis
 \begin{equation}
   Ψ_{\vK}
-  = \left( c_+ \ofK, c_- \ofK, c_-^† \of{-\vK}, - c_+^† \of{-\vK} \right)^T
+  = {\left( c_+ \ofK, c_- \ofK, c_-^† \of{-\vK}, - c_+^† \of{-\vK} \right)}^T,
 \end{equation}
 as
 \begin{equation}
   \mathcal{H}_{\text{MF}} \ofK
-  = ξ_{\vK} \hat{η}_z - Δ \hat{η}_x
+  = ξ_{\vK} \hat{η}_z - Δ \hat{η}_x,
 \end{equation}
 where $\hat{η}_i$ are Pauli matrices acting on Nambu (particle-hole) space,
 $ξ_{\vK}
-= - \frac{k^2}{2m} - μ + \sqrt{E_{\text{soc}}^2 + \left( μ_B B \right)^2}$,
+= - k^2 / 2 m - μ + \sqrt{E_{\text{soc}}^2 + {\left( μ_B B \right)}^2}$,
 and the mean field
 $Δ = v' \of{b} ∑_{\vK'} \left⟨ c_- \of{-\vK'} c_+ \of{\vK'} \right⟩$
 describes an inter-valley pairing field, which we choose to be real
 for convenience.
 
-In a conventional 2D superconductor with spin-degenerate Fermi surface,
-the applying of an in-plane magnetic field causes an energy splitting
+In a conventional 2D superconductor with a spin-degenerate Fermi surface,
+the application of an in-plane magnetic field induces an energy splitting
 between opposite-spin bands.
-This energy mismatch between opposite spins gives rise
-to a pair-breaking effect in the clean system characterized
-by the pair-breaking equation for temperature $T ≤ T_c^0$
+This energy mismatch between opposite spins creates
+a pair-breaking effect in the clean system characterized
+by the pair-breaking equation for temperatures $T ≤ T_c^0$
 \cite{Maki01061964},
 \begin{multline}
   \label{eq:conventional_pair_breaking_eq}
@@ -153,19 +154,20 @@ critical field remains the same regardless of the presence of scalar
 disorders
 \cite{Maki01061964}.
 
-Unlike the conventional 2D superconductors, the two single-spin Fermi
-pockets at different valleys in our system remains to be perfectly
-nested without energy mismatch caused by spin paramagnetism, except
-that the spins at the two pockets are no longer opposite with equal-spin
+Unlike the conventional 2D superconductors,
+in our system the two single-spin Fermi pockets at different valleys
+remain perfectly nested without the energy mismatch
+caused by spin paramagnetism:
+except the spins at the two pockets are no longer opposite with equal-spin
 components induced by the field.
 These two differences give rise to new features
-in the spin-valley locking system on the effects of in-plane magnetic fields.
+in the spin-valley locking system from the effects of in-plane magnetic fields.
 First, in the clean limit, the presence of in-plane
-magnetic fields does not lead to a pair-breaking effect for the lack
-of energy mismatch but mildly suppresses the transition temperature
+magnetic fields do not lead to a pair-breaking effect for the lack
+of energy mismatch, but mildly suppresses the transition temperature
 through the weakening of the pairing strength.
 The suppressed transition
-temperature $T_c'$ is related to zero-field transition temperature $T_c^0$ as
+temperature $T_c'$ is related to the zero-field transition temperature $T_c^0$ as
 $T_c' = T_c^0 \exp{\left( - b^2 / v_0 N_F \right)}$
 in the mean-field theory,
 where $N_F$ is the density of states at the Fermi level.
@@ -176,7 +178,7 @@ components on the two pockets.
 This interplay between the in-plane magnetic field
 and the scalar disorder leads to a pair-breaking effect.
 
-In the presence of dilute randomly-distributed non-magnetic impurities
+In the presence of dilute randomly-distributed non-magnetic impurities,
 the Hamiltonian for short-range impurity potential is given by
 \begin{equation}
   \mathcal{H}_{\text{imp}}
