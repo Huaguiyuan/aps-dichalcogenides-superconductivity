@@ -6,6 +6,7 @@
 # This should not be needed when using XeLaTeX.
 s/\\vc{ϵ}/\\boldsymbol{\\epsilon}/g
 s/·/{\\cdot}/g
+s/…/{\\ldots}/g
 s/†/{\\dagger}/g
 s/↓/{\\downarrow}/g
 s/∫/{\\int}/g

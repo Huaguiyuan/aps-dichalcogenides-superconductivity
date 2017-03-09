@@ -56,12 +56,13 @@ $φ_τ \ofK = U_τ \of{b} ϕ_τ \ofK$,
 where $b = μ_B B / {E_{\text{soc}}}$
 is the dimensionless magnetic field.
 Applying a uniform in-plane magnetic field shifts both the
-upper and lower valence bands at the two valleys
-by the same amount so that the perfect nesting condition between
+upper (lower) valence bands at the two valleys by the same amount
+(but the opposite amount between the upper and lower band at each valley),
+so that the perfect nesting condition between
 the Fermi pockets at the two valleys remains.
-The quasiparticle spin acquires a finite in-plane component,
+Meanwhile, the quasiparticle spin acquires a finite in-plane component,
 i.e., deviating from $± z$ direction.
-Explicitly,
+Explicitly, we have
 $\Braket{τ, u | \hat{s}_z | τ, u} = - \Braket{τ, l | \hat{s}_z | τ, l}
 = \left( τ / 2 \right) / \sqrt{1 + b^2}$,
 and
@@ -78,12 +79,8 @@ and affects the pairing strength as shown below.
 To evaluate the effect of the magnetic field on the superconductivity
 we follow the procedure used in \cref{s:superconductivity}.
 A local attractive density-density
-interaction with pairing strength $v_0$ can be written as
-\begin{equation}
-  \mathcal{H}_{\text{int}}
-  = - v_0 ∫ ρ \of{\vc{r}} ρ \left( \vc{r}' \right)
-    \: \dif^2 \vc{r} \: \dif^2 \vc{r}',
-\end{equation}
+interaction with pairing strength $v_0$ can be written as:
+$\mathcal{H}_{\text{int}} = - v_0 ∫ \dif^2 \vc{r} ρ \of{\vc{r}} ρ \of{\vc{r}}$
 with the quasiparticle density
 $ρ \of{\vc{r}} = ∑_{\s} c_{\s}^† \of{\vc{r}} c_{\s} \of{\vc{r}}$,
 where $c_{\s}^† \of{\vc{r}}$ ($c_{\s} \of{\vc{r}}$) is the
@@ -111,12 +108,9 @@ has its up (down) spin tilted towards the field direction.
 As a result, the intervalley pairing contains equal-spin pairing components in
 the presence of in-plane field.
 
-We write the mean-field Hamiltonian, using the Nambu-valley basis
-\begin{equation}
-  Ψ_{\vK}
-  = {\left( c_+ \ofK, c_- \ofK, c_-^† \of{-\vK}, - c_+^† \of{-\vK} \right)}^T,
-\end{equation}
-as
+The mean-field Hamiltonian, using the Nambu-valley basis
+ $Ψ_{\vK} = {\left( c_+ \ofK, c_- \ofK, c_-^† \of{-\vK}, - c_+^† \of{-\vK} \right)}^T$,
+takes the form
 \begin{equation}
   \mathcal{H}_{\text{MF}} \ofK
   = ξ_{\vK} \hat{η}_z - Δ \hat{η}_x,
@@ -138,9 +132,9 @@ by the pair-breaking equation for temperature $T ≤ T_c^0$
 \cite{Maki01061964},
 \begin{multline}
   \label{eq:conventional_pair_breaking_eq}
-  \ln{\frac{T_c^0}{T}} +  ψ \of{\frac{1}{2}} \\
+  \ln{\frac{T_c^0}{T}} \\
   = \frac{1}{2} \left[ ψ \of{\frac{1}{2} + \frac{i μ_B B_c}{2 π T}}
-  + ψ \of{\frac{1}{2} - \frac{i μ_B B_c}{2 π T}} \right],
+  + ψ \of{\frac{1}{2} - \frac{i μ_B B_c}{2 π T}} \right] -  ψ \of{\frac{1}{2}},
 \end{multline}
 where $T_c^0$ is the transition temperature at zero field in
 the clean system and $ψ \of{z}$ is the digamma function.
@@ -157,13 +151,13 @@ disorders
 Unlike the conventional 2D superconductors,
 in our system the two single-spin Fermi pockets at different valleys
 remain perfectly nested without the energy mismatch
-caused by spin paramagnetism:
-except the spins at the two pockets are no longer opposite with equal-spin
+caused by spin paramagnetism,
+and the spins at the two pockets are no longer opposite with equal-spin
 components induced by the field.
 These two differences give rise to new features
 in the spin-valley locking system from the effects of in-plane magnetic fields.
 First, in the clean limit, the presence of in-plane
-magnetic fields do not lead to a pair-breaking effect for the lack
+magnetic fields does not lead to a pair-breaking effect for the lack
 of energy mismatch, but mildly suppresses the transition temperature
 through the weakening of the pairing strength.
 The suppressed transition
@@ -182,8 +176,7 @@ In the presence of dilute randomly-distributed non-magnetic impurities,
 the Hamiltonian for short-range impurity potential is given by
 \begin{equation}
   \mathcal{H}_{\text{imp}}
-  = ∑_j ∫ U_0 δ \of{\vc{r} - \vc{R}_j} ρ \of{\vc{r}}
-    \: \dif^2 \vc{r},
+  = ∑_j ∫ \dif^2 \vc{r} U_0 δ \of{\vc{r} - \vc{R}_j} ρ \of{\vc{r}},
 \end{equation}
 where $\vc{R}_j$ is the position of the $j$th impurity and
 $U_0$ is the disorder strength.
@@ -205,9 +198,10 @@ where $\hat{τ}_i$ are Pauli matrices operating in valley space.
 The first term in $\hat{U}$ corresponds to intravalley scattering
 and the second term corresponds to intervalley scattering.
 Note that we have ignored the factors
-$e^{± 2 i \vc{K} · \vc{R}_j}$
+$e^{i \left( ± 2 \vc{K} \right) · \vc{R}_j }$
 in the intervalley terms because
-$e^{2 i \vc{K} · \vc{R}_j}$ and $e^{-2 i \vc{K} · \vc{R}_j}$
+$e^{i \left( 2 \vc{K} \right) · \vc{R}_j}$
+and $e^{i \left( - 2 \vc{K} \right) · \vc{R}_j}$
 will appear in pair and cancel each other
 in the diagrammatical calculation of self energy.
 
@@ -217,9 +211,9 @@ in the first-order Born approximation, is obtained as
 \cite{AbrikosovGorkov1961,maki1969superconductivity}
 \begin{equation}
   \hat{Σ} \of {\vK, i ω_n}
-  = \frac{n_{\text{imp}}}{{\left( 2π \right)}^2}
-    ∫ \hat{U} \hat{\mathcal{G}}_0 \of{\vK', i ω_n} \hat{U}
-    \: \dif^2 \vK',
+  = n_{\text{imp}}
+    ∫ \frac{\dif^2 \vK}{{\left( 2π \right)}^2}
+    \hat{U} \hat{\mathcal{G}}_0 \of{\vK', i ω_n} \hat{U},
 \end{equation}
 where $n_{\text{imp}}$ is the impurity concentration
 and $\hat{\mathcal{G}}_0$
@@ -258,7 +252,7 @@ Here, $1 / τ_1$ and $1 / τ_2$ are the collision rates corresponding
 to the disorder-induced intravalley and intervalley scattering, respectively,
 with the expressions
 \begin{equation}
-  \frac{1}{τ_1} = 2 π U_0^2 N_F n_{\text{imp}}, \:
+  \frac{1}{τ_1} = 2 U_0^2 n_{\text{imp}} π N_F, \:
   \frac{1}{τ_2} = \frac{1}{τ_1} \frac{b^2}{1 + b^2}.
 \end{equation}
 
@@ -266,10 +260,11 @@ In the superconducting state, the self-consistency equation for the
 order parameter is given by
 \begin{equation}
   Δ
-  = \frac{1}{4} \frac{v' T}{{\left( 2 π \right)}^2}
-    ∑_n ∫ \Tr{\left[ \hat{η}_x \hat{\mathcal{G}} \of{\vK, i ω_n} \right]}
-    \: \dif^2 \vK.
+  = \frac{1}{4} v' T
+    ∑_n ∫ \frac{\dif^2 \vK}{{\left( 2 π \right)}^2}
+    \Tr{\left[ \hat{η}_x \hat{\mathcal{G}} \of{\vK, i ω_n} \right]}.
 \end{equation}
+where $\Tr \left[ … \right]$ is the trace of the argument.
 Explicitly, from \cref{eq:renormalized_g}, it has the form
 \begin{equation}
   \label{eq:explicit_self_consistency_eq}
