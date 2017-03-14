@@ -12,7 +12,7 @@ s/↓/{\\downarrow}/g
 s/∫/{\\int}/g
 s/≤/{\\leq}/g
 s/≈/{\\approx}/g
-s/≪/{\ll}/g
+s/≪/{\\ll}/g
 s/ϵ/{\\epsilon}/g
 s/ℏ/{\\hbar}/g
 s/∓/{\\mp}/g
