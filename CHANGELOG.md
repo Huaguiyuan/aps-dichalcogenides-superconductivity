@@ -1,5 +1,0 @@
-# Changelog
-
-## HEAD
-
-- Initial release.
